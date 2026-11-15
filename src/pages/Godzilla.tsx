@@ -2,7 +2,7 @@ import { Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis
 import { site, gzMeta, usd, jpy, date } from "../data";
 import { Card, Change, Note, NotReported, Section, Stat } from "../components/ui";
 import { axis, C, RichTooltip } from "../components/charts";
-import { GodzillaArt } from "../components/Posters";
+import { GodzillaPoster } from "../components/Posters";
 
 const G = site.godzilla.figures as Record<string, any>;
 const pick = (o: any) => ({ value: usd(o?.amount), status: o?.status, source: o?.source, url: o?.url });
@@ -19,7 +19,7 @@ export default function Godzilla() {
       <Section eyebrow="Godzilla Minus Zero" title="Box office tracker" intro={<>Japan's own "domestic" market is labelled <b>Japan</b>. "North America" means U.S. + Canada, the Hollywood trade's "domestic". The two are never merged.</>}>
         <div className="grid gap-4 lg:grid-cols-[220px_1fr]">
           <div className="mx-auto w-44 lg:w-full">
-            <GodzillaArt className="w-full rounded-xl" />
+            <GodzillaPoster className="rounded-xl" />
             <p className="mt-2 text-center text-xs text-mute">
               Dir. {gzMeta.director} · Japan {date(gzMeta.releaseDate)} · North America {date("2026-11-06")}
             </p>
@@ -36,8 +36,10 @@ export default function Godzilla() {
               <Stat label="Worldwide, to Nov 8" {...pick(G.wwOpening)} accent="godz" />
               <Stat label="Global IMAX opening" {...pick(G.imaxWW)} />
               <Stat label="N. America IMAX" {...pick(G.imaxNA)} sub="40% of opening" />
-              <Stat label="Admissions (Japan)" value={null} />
-              <Stat label="Production budget" value={gzMeta.budget.text.split(" (")[0]} sub="reported" />
+              <Stat label="Japan opening day" value={jpy(G.japanDay1?.amount)} sub={G.japanAdmissionsDay1 ? `${G.japanAdmissionsDay1.amount.toLocaleString("en-US")}+ admissions` : undefined} status={G.japanDay1?.status} source={G.japanDay1?.source} url={G.japanDay1?.url} />
+              <Stat label="Worldwide, running total" {...pick(G.wwLatest)} accent="godz" />
+              <Stat label="International, running total" {...pick(G.intlLatest)} sub="includes Japan" />
+              <Stat label="Production budget" value={gzMeta.budget.text.split(" ")[0]} sub="reported, under $20M per NSJ" />
             </div>
           </Card>
         </div>
@@ -56,7 +58,7 @@ export default function Godzilla() {
                 <XAxis dataKey="label" {...axis} />
                 <YAxis {...axis} tickFormatter={(v) => `$${v / 1e6}M`} />
                 <Tooltip content={<RichTooltip fmt={(v) => usd(v) ?? ""} />} />
-                <Bar dataKey="v" name="Weekend gross" radius={[4, 4, 0, 0]}>
+                <Bar dataKey="v" name="Weekend gross" radius={[4, 4, 0, 0]} isAnimationActive={false}>
                   <Cell fill={C.godz} />
                   <Cell fill={C.godz} fillOpacity={0.4} stroke={C.godz2} strokeDasharray="4 3" />
                 </Bar>

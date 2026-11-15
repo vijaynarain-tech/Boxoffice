@@ -223,5 +223,151 @@
     "source": "imax",
     "url": "https://www.imax.com/pr/godzilla-minus-zero-stomps-biggest-global-opening-japanese-film",
     "note": "40% of the North American total: IMAX's biggest domestic opening-weekend share."
+  },
+  {
+    "id": "godzilla-013",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "JP",
+    "period": {
+      "type": "day",
+      "date": "2026-11-03",
+      "day": 1
+    },
+    "amount": 910000000,
+    "unit": "JPY",
+    "source": "theweek",
+    "url": "https://www.theweek.in/news/entertainment/2026/11/09/godzilla-minus-zero-japan-north-america-box-office-records.html",
+    "note": "About $5.7M. Toho: opening-day record for a live-action film in Japan."
+  },
+  {
+    "id": "godzilla-014",
+    "film": "godzilla",
+    "metric": "footfalls",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "JP",
+    "period": {
+      "type": "day",
+      "date": "2026-11-03",
+      "day": 1
+    },
+    "amount": 590000,
+    "unit": "COUNT",
+    "source": "theweek",
+    "url": "https://www.theweek.in/news/entertainment/2026/11/09/godzilla-minus-zero-japan-north-america-box-office-records.html",
+    "note": "Opening-day admissions (over 590,000)."
+  },
+  {
+    "id": "godzilla-015",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "final",
+    "territory": "TW",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Opening weekend"
+    },
+    "amount": 1006969,
+    "unit": "USD",
+    "source": "thenumbers",
+    "url": "https://www.the-numbers.com/movie/Godzilla-Minus-Zero-(2026-Japan)",
+    "screens": 82
+  },
+  {
+    "id": "godzilla-016",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "final",
+    "territory": "TW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-09",
+      "throughDay": 7
+    },
+    "amount": 1132257,
+    "unit": "USD",
+    "source": "thenumbers",
+    "url": "https://www.the-numbers.com/movie/Godzilla-Minus-Zero-(2026-Japan)"
+  },
+  {
+    "id": "godzilla-017",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "TH",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Opening weekend"
+    },
+    "amount": 550000,
+    "unit": "USD",
+    "source": "variety",
+    "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-ramayana-nternational-box-office-1236942760/",
+    "note": "Listed by Variety among local records."
+  },
+  {
+    "id": "godzilla-018",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "KR",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Opening weekend"
+    },
+    "amount": 220000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "Yahoo's syndicated copy of the same report shows $200K."
+  },
+  {
+    "id": "godzilla-019",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "final",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": null,
+      "throughDay": null
+    },
+    "amount": 74070000,
+    "unit": "USD",
+    "source": "thenumbers",
+    "url": "https://www.the-numbers.com/movie/Godzilla-Minus-Zero-(2026-Japan)",
+    "note": "Running worldwide total on The Numbers at retrieval; reporting date not shown in the snippet."
+  },
+  {
+    "id": "godzilla-020",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "final",
+    "territory": "INTL",
+    "period": {
+      "type": "cume",
+      "asOf": null,
+      "throughDay": null
+    },
+    "amount": 31390000,
+    "unit": "USD",
+    "source": "thenumbers",
+    "url": "https://www.the-numbers.com/movie/Godzilla-Minus-Zero-(2026-Japan)",
+    "note": "International running total (includes Japan)."
   }
 ]

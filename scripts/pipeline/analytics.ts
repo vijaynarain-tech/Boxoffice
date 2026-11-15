@@ -148,6 +148,7 @@ const sel = (obs: Observation[], f: Partial<Record<"metric" | "territory" | "reg
   obs.filter(
     (o) =>
       o.period.type === ptype &&
+      o.unit === "INR_CR" &&
       (f.metric === undefined || o.metric === f.metric) &&
       (f.territory === undefined || o.territory === f.territory) &&
       o.region === f.region &&

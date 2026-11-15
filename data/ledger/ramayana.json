@@ -1196,5 +1196,665 @@
     "source": "businessstandard",
     "url": "https://www.business-standard.com/entertainment/ramayana-box-office-collection-crosses-rs-1-000-crore-worldwide-in-8-days-nc-126111301215_1.html",
     "note": "Crossed ₹1,000 Cr worldwide in 8 days."
+  },
+  {
+    "id": "ramayana-068",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "US",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 12825000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-069",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "CA",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 3625000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403",
+    "note": "Converted from CAD to USD by Pinkvilla."
+  },
+  {
+    "id": "ramayana-070",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "AU",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 2850000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-071",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "NZ",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 350000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-072",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "ME",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 3600000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403",
+    "note": "Middle East combined (UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman). No country split published."
+  },
+  {
+    "id": "ramayana-073",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "NP",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 925000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-074",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "GB",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 3875000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-075",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "DE",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 760000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-076",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "MY",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 900000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-077",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "TH",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 850000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-078",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "SG",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 550000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-079",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "VN",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 350000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-080",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "APAC_OTHER",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 650000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403",
+    "note": "Rest of Asia-Pacific combined."
+  },
+  {
+    "id": "ramayana-081",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "NL",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 330000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-082",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "FR",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 280000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403"
+  },
+  {
+    "id": "ramayana-083",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "OS",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 34150000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-phenomenal-run-continues-overseas-tops-rs-900-cr-worldwide-1406403",
+    "note": "Overseas total. Listed territories add up to $32.72M; about $1.43M is not broken out. $35.60M if Canada were kept in CAD."
+  },
+  {
+    "id": "ramayana-084",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "US",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 9020000,
+    "unit": "USD",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/"
+  },
+  {
+    "id": "ramayana-085",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "GULF",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 2700000,
+    "unit": "USD",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/",
+    "note": "Gulf combined."
+  },
+  {
+    "id": "ramayana-086",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "NP",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 550000,
+    "unit": "USD",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/"
+  },
+  {
+    "id": "ramayana-087",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "TH",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 550000,
+    "unit": "USD",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/",
+    "note": "5.5× the previous highest-grossing Indian film in Thailand."
+  },
+  {
+    "id": "ramayana-088",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "SG",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 375000,
+    "unit": "USD",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/"
+  },
+  {
+    "id": "ramayana-089",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "MY",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 350000,
+    "unit": "USD",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/"
+  },
+  {
+    "id": "ramayana-090",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "GB",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 2200000,
+    "unit": "GBP",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/",
+    "note": "Biggest opening for an Indian film in the UK; #1 opening weekend."
+  },
+  {
+    "id": "ramayana-091",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "DE",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 542000,
+    "unit": "EUR",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/"
+  },
+  {
+    "id": "ramayana-092",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "OS",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 24350000,
+    "unit": "USD",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/",
+    "note": "Overseas total, 4 days."
+  },
+  {
+    "id": "ramayana-093",
+    "film": "ramayana",
+    "metric": "footfalls",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "AE",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 157000,
+    "unit": "COUNT",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/ramayana-box-office-1-opening-weekend-in-the-uk-earns-5-5-times-more-than-the-highest-grossing-indian-film-in-thailand-detailed-global-report/",
+    "note": "Biggest opening-weekend admissions in the UAE this year."
+  },
+  {
+    "id": "ramayana-094",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "GB",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 2150000,
+    "unit": "GBP",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-impresses-overseas-scores-rs-500-cr-opening-weekend-worldwide-1406342"
+  },
+  {
+    "id": "ramayana-095",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "CA",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 3200000,
+    "unit": "CAD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-impresses-overseas-scores-rs-500-cr-opening-weekend-worldwide-1406342"
+  },
+  {
+    "id": "ramayana-096",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "OS",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 23375000,
+    "unit": "USD",
+    "source": "pinkvilla",
+    "url": "https://www.pinkvilla.com/entertainment/box-office/ramayana-part-one-box-office-collections-ranbir-kapoor-and-yash-starrer-impresses-overseas-scores-rs-500-cr-opening-weekend-worldwide-1406342",
+    "note": "Sum of Pinkvilla's territory table; $24.30M on its adjusted basis."
+  },
+  {
+    "id": "ramayana-097",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "AE",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 2200000,
+    "unit": "USD",
+    "source": "thefederal",
+    "url": "https://thefederal.com/films/epic-resonance-ramayana-breaks-opening-records-across-se-asia-nepal-262824"
+  },
+  {
+    "id": "ramayana-098",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "AU",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 1900000,
+    "unit": "USD",
+    "source": "thefederal",
+    "url": "https://thefederal.com/films/epic-resonance-ramayana-breaks-opening-records-across-se-asia-nepal-262824"
+  },
+  {
+    "id": "ramayana-099",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "DE",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 625000,
+    "unit": "USD",
+    "source": "thefederal",
+    "url": "https://thefederal.com/films/epic-resonance-ramayana-breaks-opening-records-across-se-asia-nepal-262824"
+  },
+  {
+    "id": "ramayana-100",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "OS",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "label": "Extended opening weekend Nov 5–8"
+    },
+    "amount": 23700000,
+    "unit": "USD",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/news/ramayana-overseas-box-office-opens-strong-as-imax-contributes-11-worldwide-sets-new-indian-cinema-record"
+  },
+  {
+    "id": "ramayana-101",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "AE",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 1.25,
+    "unit": "INR_CR",
+    "source": "boxofficeindia24",
+    "url": "https://www.boxofficeindia24.com/news/ramayana-day-7-box-office-20261111-live",
+    "note": "Single-day gross for Day 7 (Wed Nov 11)."
+  },
+  {
+    "id": "ramayana-102",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "MY",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 1.21,
+    "unit": "INR_CR",
+    "source": "boxofficeindia24",
+    "url": "https://www.boxofficeindia24.com/news/ramayana-day-7-box-office-20261111-live",
+    "note": "Single-day gross for Day 7 (Wed Nov 11)."
+  },
+  {
+    "id": "ramayana-103",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "NP",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 0.911,
+    "unit": "INR_CR",
+    "source": "boxofficeindia24",
+    "url": "https://www.boxofficeindia24.com/news/ramayana-day-7-box-office-20261111-live",
+    "note": "Single-day gross for Day 7 (Wed Nov 11)."
+  },
+  {
+    "id": "ramayana-104",
+    "film": "ramayana",
+    "metric": "gross",
+    "retrievedAt": "2026-11-15T04:20:00Z",
+    "status": "estimated",
+    "territory": "SG",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 0.356,
+    "unit": "INR_CR",
+    "source": "boxofficeindia24",
+    "url": "https://www.boxofficeindia24.com/news/ramayana-day-7-box-office-20261111-live",
+    "note": "Single-day gross for Day 7 (Wed Nov 11)."
   }
 ]

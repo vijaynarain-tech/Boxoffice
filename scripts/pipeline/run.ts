@@ -42,7 +42,7 @@ async function fetchFx(prev: FxState, steps: Step[]): Promise<FxState> {
     return prev;
   }
   try {
-    const res = await fetch("https://api.frankfurter.app/latest?from=USD&to=INR,JPY", { signal: AbortSignal.timeout(15000) });
+    const res = await fetch("https://api.frankfurter.app/latest?from=USD&to=INR,JPY,GBP,EUR,CAD", { signal: AbortSignal.timeout(15000) });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const body = FrankfurterResponse.parse(await res.json());
     steps.push({ name: "fx", ok: true, detail: `USD→INR ${body.rates.INR}, USD→JPY ${body.rates.JPY} (ECB ${body.date})` });
@@ -153,8 +153,12 @@ async function main() {
       japanJPY: one((o) => o.territory === "JP" && o.unit === "JPY"),
       japanUSD: one((o) => o.territory === "JP" && o.unit === "USD" && o.period.type === "cume"),
       japanWeekend: one((o) => o.territory === "JP" && o.period.type === "weekend"),
-      wwOpening: one((o) => o.territory === "WW" && !o.format),
-      intlOpening: one((o) => o.territory === "INTL"),
+      wwOpening: one((o) => o.territory === "WW" && !o.format && o.period.type === "weekend"),
+      wwLatest: one((o) => o.territory === "WW" && !o.format && o.period.type === "cume"),
+      intlOpening: one((o) => o.territory === "INTL" && o.period.type === "weekend"),
+      intlLatest: one((o) => o.territory === "INTL" && o.period.type === "cume"),
+      japanDay1: one((o) => o.territory === "JP" && o.metric === "gross" && o.period.type === "day"),
+      japanAdmissionsDay1: one((o) => o.territory === "JP" && o.metric === "footfalls"),
       imaxWW: one((o) => o.territory === "WW" && o.format === "IMAX"),
       imaxNA: one((o) => o.territory === "US-CA" && o.format === "IMAX"),
     };
@@ -235,10 +239,12 @@ async function main() {
     const trackers = { worldwide: tracker(lb.worldwide, ramFc.scenarios), indiaNet: tracker(lb.indiaNet, null) };
 
     /* ---------------- Territories ---------------- */
-    const territories = [
-      ...["IN", "US", "US-CA", "INTL_OTHER"].map((t) => ({ film: "ramayana", t, obs: ramObs.filter((o) => o.territory === t && !o.region && !o.city) })),
-      ...["US-CA", "JP", "INTL"].map((t) => ({ film: "godzilla", t, obs: gzObs.filter((o) => o.territory === t) })),
-    ].filter((x) => x.obs.length).map((x) => ({ film: x.film, territory: x.t, observations: x.obs }));
+    // Every territory with at least one figure. Aggregates (OS, INTL, GULF, ME…) stay
+    // as their own rows and are never summed with the countries inside them.
+    const territories = (["ramayana", "godzilla"] as const).flatMap((film) => {
+      const fo = obs.filter((o) => o.film === film && !o.region && !o.city && o.territory !== "IN" && o.territory !== "WW");
+      return [...new Set(fo.map((o) => o.territory))].map((t) => ({ film, territory: t, observations: fo.filter((o) => o.territory === t) }));
+    });
 
     const site = {
       generatedAt: startedAt,

@@ -1,6 +1,6 @@
 import { ArrowRight, Trophy } from "lucide-react";
 import { site, ramMeta, gzMeta, cr, usd, jpy, date, dateTimeIST, sourceName } from "../data";
-import { RamayanaArt, GodzillaArt } from "../components/Posters";
+import { RamayanaPoster, GodzillaPoster } from "../components/Posters";
 import { Card, Change, Note, Section, Stat, StatusPill, SourceTag } from "../components/ui";
 
 const R = site.ramayana;
@@ -15,11 +15,9 @@ function HeroPanel({ side }: { side: "ram" | "godz" }) {
     <article className={`relative overflow-hidden rounded-2xl border ${isRam ? "border-ram/25" : "border-godz/25"} bg-surface`}>
       <div aria-hidden className="pointer-events-none absolute inset-0" style={{ background: isRam ? "radial-gradient(80% 60% at 0% 0%, rgba(245,185,66,.16), transparent 60%), radial-gradient(60% 50% at 100% 100%, rgba(231,111,53,.12), transparent 60%)" : "radial-gradient(80% 60% at 100% 0%, rgba(59,130,246,.18), transparent 60%), radial-gradient(60% 50% at 0% 100%, rgba(34,211,238,.10), transparent 60%)" }} />
       <div className="relative flex flex-col gap-5 p-4 sm:flex-row sm:p-5">
-        <div className="mx-auto w-40 shrink-0 sm:mx-0 sm:w-44">
-          {isRam ? <RamayanaArt className="w-full rounded-xl shadow-2xl shadow-black/50" /> : <GodzillaArt className="w-full rounded-xl shadow-2xl shadow-black/50" />}
-          <a href={meta.posterUrl} target="_blank" rel="noreferrer" className="mt-1.5 block text-center text-[10px] text-mute underline decoration-line underline-offset-2 hover:text-fg">
-            Official poster ↗
-          </a>
+        <div className="mx-auto w-48 shrink-0 sm:mx-0 sm:w-48">
+          {isRam ? <RamayanaPoster className="rounded-xl shadow-2xl shadow-black/50 ring-1 ring-ram/20" /> : <GodzillaPoster className="rounded-xl shadow-2xl shadow-black/50 ring-1 ring-godz/20" />}
+          <div className="mt-1.5 text-center text-[10px] text-mute">Official theatrical poster</div>
         </div>
         <div className="flex min-w-0 flex-1 flex-col gap-4">
           <div>

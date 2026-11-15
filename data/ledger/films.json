@@ -7,24 +7,164 @@
       "year": 2026,
       "releaseDate": "2026-11-05",
       "director": "Nitesh Tiwari",
-      "producers": ["Namit Malhotra", "Yash"],
+      "producers": [
+        "Namit Malhotra",
+        "Yash"
+      ],
       "studio": "Prime Focus Studios / Monster Mind Creations",
       "internationalDistributor": "Sony Pictures (international, per Deadline/Variety)",
       "cast": [
-        {"name": "Ranbir Kapoor", "role": "Rama"},
-        {"name": "Yash", "role": "Ravana"},
-        {"name": "Sai Pallavi", "role": "Sita"}
+        {
+          "name": "Ranbir Kapoor",
+          "role": "Rama"
+        },
+        {
+          "name": "Yash",
+          "role": "Ravana"
+        },
+        {
+          "name": "Sai Pallavi",
+          "role": "Sita"
+        }
       ],
-      "languages": ["Hindi", "Tamil", "Telugu", "Kannada", "Malayalam", "English"],
-      "formats": ["2D", "IMAX"],
-      "budget": {"text": "₹2,000 Cr for Part 1 (Wikipedia); ~₹4,000 Cr+ for both parts including global marketing (Business Today)", "sources": ["wikipedia", "businesstoday"]},
+      "languages": [
+        "Hindi",
+        "Tamil",
+        "Telugu",
+        "Kannada",
+        "Malayalam",
+        "English"
+      ],
+      "formats": [
+        "2D",
+        "IMAX"
+      ],
+      "budget": {
+        "text": "₹2,000 Cr for Part 1 (Wikipedia); ~₹4,000 Cr+ for both parts including global marketing (Business Today)",
+        "sources": [
+          "wikipedia",
+          "businesstoday"
+        ]
+      },
       "posterUrl": "https://www.imdb.com/find/?q=Ramayana%20Rise%20of%20a%20Legend",
       "accent": "ram",
       "releases": [
-        {"territory": "IN", "date": "2026-11-05", "distributor": "Prime Focus Studios", "status": "released"},
-        {"territory": "US-CA", "date": "2026-11-06", "distributor": "Sony Pictures", "status": "released"},
-        {"territory": "INTL_OTHER", "date": "2026-11-06", "distributor": "Sony Pictures", "status": "released", "note": "37 further territories per Deadline; country list not published."},
-        {"territory": "CN", "date": null, "distributor": null, "status": "unconfirmed"}
+        {
+          "territory": "IN",
+          "date": "2026-11-05",
+          "distributor": "Prime Focus Studios",
+          "status": "released"
+        },
+        {
+          "territory": "US-CA",
+          "date": "2026-11-06",
+          "distributor": "Sony Pictures",
+          "status": "released"
+        },
+        {
+          "territory": "INTL_OTHER",
+          "date": "2026-11-06",
+          "distributor": "Sony Pictures",
+          "status": "released",
+          "note": "37 further territories per Deadline; country list not published."
+        },
+        {
+          "territory": "CA",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "AU",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "NZ",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "GB",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "DE",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "NL",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "FR",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "NP",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "MY",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "TH",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "SG",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "VN",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "AE",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In the 7-day overseas table; exact local date not published."
+        },
+        {
+          "territory": "CN",
+          "date": null,
+          "distributor": null,
+          "status": "unconfirmed"
+        }
       ]
     },
     {
@@ -34,40 +174,183 @@
       "year": 2026,
       "releaseDate": "2026-11-03",
       "director": "Takashi Yamazaki",
-      "producers": ["Toho"],
+      "producers": [
+        "Toho"
+      ],
       "studio": "Toho / Robot Communications",
       "internationalDistributor": "GKIDS (North America), Toho International",
       "cast": [],
-      "languages": ["Japanese"],
-      "formats": ["2D", "IMAX"],
-      "budget": {"text": "$13–15M reported (under $20M per NSJ)", "sources": ["deadline"]},
+      "languages": [
+        "Japanese"
+      ],
+      "formats": [
+        "2D",
+        "IMAX"
+      ],
+      "budget": {
+        "text": "$13–15M reported (under $20M per NSJ)",
+        "sources": [
+          "deadline"
+        ]
+      },
       "posterUrl": "https://www.imdb.com/find/?q=Godzilla%20Minus%20Zero",
       "accent": "godz",
       "releases": [
-        {"territory": "JP", "date": "2026-11-03", "distributor": "Toho", "status": "released", "note": "Opened on Godzilla Day (Tuesday)."},
-        {"territory": "US-CA", "date": "2026-11-06", "distributor": "GKIDS", "status": "released", "theaters": 3254},
-        {"territory": "INTL", "date": "2026-11-06", "distributor": "Toho International", "status": "released", "note": "Staggered rollout. Reports differ: 64 markets (Variety) vs 101 territories (Screen Daily)."},
-        {"territory": "CN", "date": null, "distributor": null, "status": "unconfirmed"}
+        {
+          "territory": "JP",
+          "date": "2026-11-03",
+          "distributor": "Toho",
+          "status": "released",
+          "note": "Opened on Godzilla Day (Tuesday)."
+        },
+        {
+          "territory": "US-CA",
+          "date": "2026-11-06",
+          "distributor": "GKIDS",
+          "status": "released",
+          "theaters": 3254
+        },
+        {
+          "territory": "TH",
+          "date": "2026-11-04",
+          "distributor": "Toho International",
+          "status": "released"
+        },
+        {
+          "territory": "ID",
+          "date": "2026-11-04",
+          "distributor": "Toho International",
+          "status": "released",
+          "note": "No gross reported yet."
+        },
+        {
+          "territory": "PH",
+          "date": "2026-11-04",
+          "distributor": "Toho International",
+          "status": "released",
+          "note": "No gross reported yet."
+        },
+        {
+          "territory": "SG",
+          "date": "2026-11-05",
+          "distributor": "Toho International",
+          "status": "released",
+          "note": "No gross reported yet."
+        },
+        {
+          "territory": "TW",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "Played the Nov 6–8 weekend on 82 screens."
+        },
+        {
+          "territory": "KR",
+          "date": null,
+          "distributor": null,
+          "status": "released",
+          "note": "In Deadline's Nov 6–8 chart."
+        },
+        {
+          "territory": "HK",
+          "date": null,
+          "distributor": null,
+          "status": "unconfirmed",
+          "note": "No Hong Kong date found."
+        },
+        {
+          "territory": "INTL",
+          "date": "2026-11-06",
+          "distributor": "Toho International",
+          "status": "released",
+          "note": "Staggered rollout. Reports differ: 64 markets (Variety) vs 101 territories (Screen Daily)."
+        },
+        {
+          "territory": "CN",
+          "date": null,
+          "distributor": null,
+          "status": "unconfirmed"
+        }
       ]
     }
   ],
   "records": {
-    "dangal": {"title": "Dangal", "year": 2016, "lang": "Hindi"},
-    "dhurandhar-2": {"title": "Dhurandhar 2", "year": 2026, "lang": "Hindi"},
-    "baahubali-2": {"title": "Baahubali 2: The Conclusion", "year": 2017, "lang": "Telugu"},
-    "pushpa-2": {"title": "Pushpa 2: The Rule", "year": 2024, "lang": "Telugu"},
-    "dhurandhar": {"title": "Dhurandhar", "year": 2025, "lang": "Hindi"},
-    "rrr": {"title": "RRR", "year": 2022, "lang": "Telugu"},
-    "kgf-2": {"title": "KGF: Chapter 2", "year": 2022, "lang": "Kannada"},
-    "jawan": {"title": "Jawan", "year": 2023, "lang": "Hindi"},
-    "pathaan": {"title": "Pathaan", "year": 2023, "lang": "Hindi"},
-    "bajrangi-bhaijaan": {"title": "Bajrangi Bhaijaan", "year": 2015, "lang": "Hindi"},
-    "animal": {"title": "Animal", "year": 2023, "lang": "Hindi"},
-    "stree-2": {"title": "Stree 2", "year": 2024, "lang": "Hindi"},
-    "pk": {"title": "PK", "year": 2014, "lang": "Hindi"}
+    "dangal": {
+      "title": "Dangal",
+      "year": 2016,
+      "lang": "Hindi"
+    },
+    "dhurandhar-2": {
+      "title": "Dhurandhar 2",
+      "year": 2026,
+      "lang": "Hindi"
+    },
+    "baahubali-2": {
+      "title": "Baahubali 2: The Conclusion",
+      "year": 2017,
+      "lang": "Telugu"
+    },
+    "pushpa-2": {
+      "title": "Pushpa 2: The Rule",
+      "year": 2024,
+      "lang": "Telugu"
+    },
+    "dhurandhar": {
+      "title": "Dhurandhar",
+      "year": 2025,
+      "lang": "Hindi"
+    },
+    "rrr": {
+      "title": "RRR",
+      "year": 2022,
+      "lang": "Telugu"
+    },
+    "kgf-2": {
+      "title": "KGF: Chapter 2",
+      "year": 2022,
+      "lang": "Kannada"
+    },
+    "jawan": {
+      "title": "Jawan",
+      "year": 2023,
+      "lang": "Hindi"
+    },
+    "pathaan": {
+      "title": "Pathaan",
+      "year": 2023,
+      "lang": "Hindi"
+    },
+    "bajrangi-bhaijaan": {
+      "title": "Bajrangi Bhaijaan",
+      "year": 2015,
+      "lang": "Hindi"
+    },
+    "animal": {
+      "title": "Animal",
+      "year": 2023,
+      "lang": "Hindi"
+    },
+    "stree-2": {
+      "title": "Stree 2",
+      "year": 2024,
+      "lang": "Hindi"
+    },
+    "pk": {
+      "title": "PK",
+      "year": 2014,
+      "lang": "Hindi"
+    }
   },
   "china": {
-    "ramayana": {"status": "Unconfirmed", "note": "No authoritative release date or import approval has been published.", "checkedAt": "2026-11-15"},
-    "godzilla": {"status": "Unconfirmed", "note": "No mainland China release date announced.", "checkedAt": "2026-11-15"}
+    "ramayana": {
+      "status": "Unconfirmed",
+      "note": "No authoritative release date or import approval has been published.",
+      "checkedAt": "2026-11-15"
+    },
+    "godzilla": {
+      "status": "Unconfirmed",
+      "note": "No mainland China release date announced.",
+      "checkedAt": "2026-11-15"
+    }
   }
 }

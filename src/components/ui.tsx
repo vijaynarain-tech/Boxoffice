@@ -76,7 +76,7 @@ export function Stat({ label, value, sub, accent, status, source, url, big }: { 
   return (
     <div className="flex min-w-0 flex-col gap-1">
       <div className="eyebrow">{label}</div>
-      {value === null ? <NotReported /> : <div className={`num whitespace-nowrap ${big ? "text-2xl xl:text-[28px]" : "text-lg sm:text-xl"} font-semibold ${color}`}>{value}</div>}
+      {value === null ? <NotReported /> : <div className={`num whitespace-nowrap ${big ? "text-[22px] sm:text-2xl" : "text-lg sm:text-xl"} font-semibold ${color}`}>{value}</div>}
       {(sub || status || source) && (
         <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-mute">
           {sub}

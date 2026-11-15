@@ -196,5 +196,41 @@
     "access": "manual",
     "accessNote": "Historical figures entered from widely cited trade totals. Each one is marked unverified until an editor confirms it against the named tracker and adds the URL.",
     "reliability": "Indicative. Shown with an 'Unverified' badge."
+  },
+  {
+    "region": "Global",
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "pinkvilla",
+    "name": "Pinkvilla",
+    "url": "https://www.pinkvilla.com/",
+    "reliability": "Territory-wise overseas tables in USD; converts CAD to USD."
+  },
+  {
+    "region": "Global",
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "thefederal",
+    "name": "The Federal",
+    "url": "https://thefederal.com/",
+    "reliability": "Secondary report citing NDTV Profit."
+  },
+  {
+    "region": "Global",
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "boxofficeindia24",
+    "name": "BoxOffice India 24",
+    "url": "https://www.boxofficeindia24.com/",
+    "reliability": "Live day-wise tracker; overseas covers about 32 countries, not every market, so its totals are lower than Sacnilk's."
+  },
+  {
+    "region": "Japan",
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "theweek",
+    "name": "The Week",
+    "url": "https://www.theweek.in/",
+    "reliability": "Secondary report of Toho announcements."
   }
 ]

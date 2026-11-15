@@ -42,7 +42,17 @@ export const usd = (v: number | null | undefined) => {
   return `$${v.toFixed(0)}`;
 };
 export const jpy = (v: number | null | undefined) => (v === null || v === undefined ? null : v >= 1e8 ? `¥${(v / 1e9).toFixed(2)}B` : `¥${v.toLocaleString("ja-JP")}`);
-export const money = (amount: number | null | undefined, unit: string) => (unit === "INR_CR" ? cr(amount) : unit === "USD" ? usd(amount) : unit === "JPY" ? jpy(amount) : amount?.toLocaleString() ?? null);
+const sym: Record<string, string> = { GBP: "£", EUR: "€", CAD: "C$" };
+const short = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(2)}M` : v >= 1e3 ? `${(v / 1e3).toFixed(0)}K` : v.toFixed(0));
+export const money = (amount: number | null | undefined, unit: string): string | null => {
+  if (amount === null || amount === undefined) return null;
+  if (unit === "INR_CR") return cr(amount);
+  if (unit === "USD") return usd(amount);
+  if (unit === "JPY") return jpy(amount);
+  if (sym[unit]) return `${sym[unit]}${short(amount)}`;
+  if (unit === "COUNT") return `${amount.toLocaleString("en-IN")} admissions`;
+  return amount.toLocaleString();
+};
 export const pct = (v: number | null | undefined, sign = true) => (v === null || v === undefined ? null : `${sign && v > 0 ? "+" : ""}${v.toFixed(1)}%`);
 export const date = (iso: string | null | undefined, opts: Intl.DateTimeFormatOptions = { day: "numeric", month: "short", year: "numeric" }) =>
   iso ? new Date(iso.length === 10 ? iso + "T00:00:00Z" : iso).toLocaleDateString("en-GB", { timeZone: iso.length === 10 ? "UTC" : "Asia/Kolkata", ...opts }) : "—";
@@ -50,21 +60,21 @@ export const dateTimeIST = (iso: string | null | undefined) =>
   iso ? new Date(iso).toLocaleString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", hour12: true }) + " IST" : "—";
 
 /** Convert using the stored ECB rate only. Returns null until a rate exists. */
+type Rates = { INR: number; JPY: number; GBP?: number; EUR?: number; CAD?: number };
 export function toUSD(amount: number, unit: string): number | null {
-  const r = site.fx.rates as { INR: number; JPY: number } | null;
+  const r = site.fx.rates as Rates | null;
   if (unit === "USD") return amount;
   if (!r) return null;
   if (unit === "INR_CR") return (amount * 1e7) / r.INR;
-  if (unit === "JPY") return amount / r.JPY;
-  return null;
+  const rate = (r as Record<string, number | undefined>)[unit];
+  return rate ? amount / rate : null;
 }
 export function toINRcr(amount: number, unit: string): number | null {
   const r = site.fx.rates as { INR: number; JPY: number } | null;
   if (unit === "INR_CR") return amount;
   if (!r) return null;
-  if (unit === "USD") return (amount * r.INR) / 1e7;
-  if (unit === "JPY") return ((amount / r.JPY) * r.INR) / 1e7;
-  return null;
+  const u = toUSD(amount, unit);
+  return u === null ? null : (u * r.INR) / 1e7;
 }
 
 export const TERRITORY: Record<string, string> = {
@@ -77,7 +87,34 @@ export const TERRITORY: Record<string, string> = {
   WW: "Worldwide",
   INTL: "International (outside North America)",
   INTL_OTHER: "Other international (combined)",
+  CA: "Canada",
+  AU: "Australia",
+  NZ: "New Zealand",
+  GB: "United Kingdom",
+  DE: "Germany",
+  NL: "Netherlands",
+  FR: "France",
+  NP: "Nepal",
+  MY: "Malaysia",
+  TH: "Thailand",
+  SG: "Singapore",
+  VN: "Vietnam",
+  TW: "Taiwan",
+  KR: "South Korea",
+  HK: "Hong Kong",
+  ID: "Indonesia",
+  PH: "Philippines",
+  AE: "United Arab Emirates",
+  ME: "Middle East (combined)",
+  GULF: "Gulf (combined)",
+  APAC_OTHER: "Rest of Asia-Pacific (combined)",
 };
+
+/** Asian markets, home markets first. Aggregates are marked so they are never summed with countries. */
+export const ASIA: { code: string; aggregate?: boolean }[] = [
+  { code: "IN" }, { code: "JP" }, { code: "CN" }, { code: "HK" }, { code: "TW" }, { code: "KR" }, { code: "NP" }, { code: "MY" }, { code: "SG" }, { code: "TH" }, { code: "VN" }, { code: "ID" }, { code: "PH" },
+  { code: "AE" }, { code: "GULF", aggregate: true }, { code: "ME", aggregate: true }, { code: "APAC_OTHER", aggregate: true },
+];
 
 export const lastUpdate = site.runs.find((r: any) => r.status === "success") as { finishedAt: string; trigger: string } | undefined;
 

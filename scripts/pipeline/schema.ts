@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const Unit = z.enum(["INR_CR", "USD", "JPY"]);
+export const Unit = z.enum(["INR_CR", "USD", "JPY", "GBP", "EUR", "CAD"]);
 export const Status = z.enum(["final", "estimated", "live", "projection", "revised", "reference"]);
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
@@ -51,7 +51,7 @@ export type Source = z.infer<typeof Source>;
 export const FxState = z.object({
   status: z.enum(["pending", "ok", "stale"]),
   base: z.literal("USD"),
-  rates: z.object({ INR: z.number().positive(), JPY: z.number().positive() }).nullable(),
+  rates: z.object({ INR: z.number().positive(), JPY: z.number().positive(), GBP: z.number().positive().optional(), EUR: z.number().positive().optional(), CAD: z.number().positive().optional() }).nullable(),
   date: isoDate.nullable(),
   source: z.string(),
   fetchedAt: z.string().nullable(),
@@ -62,5 +62,5 @@ export type FxState = z.infer<typeof FxState>;
 export const FrankfurterResponse = z.object({
   base: z.literal("USD"),
   date: isoDate,
-  rates: z.object({ INR: z.number().positive(), JPY: z.number().positive() }),
+  rates: z.object({ INR: z.number().positive(), JPY: z.number().positive(), GBP: z.number().positive(), EUR: z.number().positive(), CAD: z.number().positive() }),
 });
