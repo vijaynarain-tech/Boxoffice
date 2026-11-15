@@ -1,0 +1,59 @@
+name: Update box office data
+
+# 08:00, 15:00 and 22:00 Asia/Kolkata (UTC+05:30). GitHub may start scheduled
+# runs a few minutes late; the site shows each run's actual finish time.
+# Scheduled workflows only run from the repository's default branch.
+on:
+  schedule:
+    - cron: '30 2 * * *'
+    - cron: '30 9 * * *'
+    - cron: '30 16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Run data pipeline
+        id: pipeline
+        continue-on-error: true
+        env:
+          RUN_TRIGGER: github:${{ github.event_name }}
+        run: npm run pipeline
+
+      - name: Verify the site still builds
+        if: steps.pipeline.outcome == 'success'
+        run: npm run build
+
+      - name: Commit updated dataset and run log
+        run: |
+          git config user.name "box-office-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/generated/site-data.json data/state/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "data: scheduled update $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST') [${{ steps.pipeline.outcome }}]"
+            git push
+          fi
+
+      - name: Fail the job if the pipeline failed
+        if: steps.pipeline.outcome != 'success'
+        run: |
+          echo "::error::Pipeline failed. Previous dataset kept; see data/state/runs.json."
+          exit 1

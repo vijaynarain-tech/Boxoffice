@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "base": "USD",
+  "rates": null,
+  "date": null,
+  "source": "frankfurter",
+  "fetchedAt": null,
+  "note": "Filled on the first scheduled run. No rate is assumed until then."
+}

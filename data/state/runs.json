@@ -1,0 +1,60 @@
+[
+  {
+    "startedAt": "2026-11-15T04:14:17.603Z",
+    "finishedAt": "2026-11-15T04:14:17.635Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "113 observations · 5 conflicts · 0 revisions · Ramayana Day 10 · FX pending",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "113 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "5 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  },
+  {
+    "startedAt": "2026-11-15T04:03:30.943Z",
+    "finishedAt": "2026-11-15T04:03:30.972Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "113 observations · 5 conflicts · 0 revisions · Ramayana Day 10 · FX pending",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "113 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "5 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  }
+]

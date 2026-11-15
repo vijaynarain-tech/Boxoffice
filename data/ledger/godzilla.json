@@ -1,0 +1,227 @@
+[
+  {
+    "id": "godzilla-001",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "territory": "US-CA",
+    "period": {
+      "type": "day",
+      "date": "2026-11-06",
+      "day": 1
+    },
+    "amount": 14500000,
+    "unit": "USD",
+    "source": "variety",
+    "url": "https://variety.com/2026/film/box-office/box-office-godzilla-minus-zero-cat-in-the-hat-1236942032/",
+    "note": "Friday including previews."
+  },
+  {
+    "id": "godzilla-002",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "territory": "US-CA",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Opening weekend"
+    },
+    "amount": 31600000,
+    "unit": "USD",
+    "source": "thr",
+    "url": "https://www.hollywoodreporter.com/movies/movie-news/godzilla-minus-zero-box-office-opening-the-cat-in-the-hat-1236750019/",
+    "theaters": 3254
+  },
+  {
+    "id": "godzilla-003",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "revised",
+    "metric": "gross",
+    "territory": "US-CA",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Opening weekend"
+    },
+    "amount": 30500000,
+    "unit": "USD",
+    "source": "variety",
+    "url": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-cat-in-the-hat-fizzles-1236942363/",
+    "theaters": 3254,
+    "note": "Variety's updated figure; lower than Sunday estimates."
+  },
+  {
+    "id": "godzilla-004",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "projection",
+    "metric": "gross",
+    "territory": "US-CA",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "label": "Second weekend"
+    },
+    "amount": 7500000,
+    "unit": "USD",
+    "source": "worldofreel",
+    "url": "https://www.worldofreel.com/blog/2026/11/14/3j64xd7tqm48jumt5oezv1yuc9o7q5",
+    "note": "Saturday projection, about −75%. Not an actual."
+  },
+  {
+    "id": "godzilla-005",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "projection",
+    "metric": "gross",
+    "territory": "US-CA",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 10
+    },
+    "amount": 48100000,
+    "unit": "USD",
+    "source": "rollingout",
+    "url": "https://rollingout.com/2026/11/14/godzilla-minus-zero-box-office-drop/",
+    "note": "Projected cume through Sunday Nov 15."
+  },
+  {
+    "id": "godzilla-006",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 63000000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "Includes Japan grosses since the Tuesday Nov 3 opening."
+  },
+  {
+    "id": "godzilla-007",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "territory": "INTL",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 31400000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/"
+  },
+  {
+    "id": "godzilla-008",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "territory": "JP",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-08",
+      "throughDay": 6
+    },
+    "amount": 2700000000,
+    "unit": "JPY",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "About $17M, from the Tuesday Nov 3 (Godzilla Day) opening through Sunday."
+  },
+  {
+    "id": "godzilla-009",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "metric": "gross",
+    "territory": "JP",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-08",
+      "throughDay": 6
+    },
+    "amount": 16021419,
+    "unit": "USD",
+    "source": "boxofficemojo",
+    "url": "https://www.boxofficemojo.com/release/rl1080197377/weekend/"
+  },
+  {
+    "id": "godzilla-010",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "metric": "gross",
+    "territory": "JP",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "label": "Japan Sat–Sun weekend"
+    },
+    "amount": 7130035,
+    "unit": "USD",
+    "source": "boxofficemojo",
+    "url": "https://www.boxofficemojo.com/release/rl1080197377/weekend/",
+    "note": "Ranked #1 in Japan."
+  },
+  {
+    "id": "godzilla-011",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "metric": "gross",
+    "territory": "WW",
+    "format": "IMAX",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 21300000,
+    "unit": "USD",
+    "source": "imax",
+    "url": "https://www.imax.com/pr/godzilla-minus-zero-stomps-biggest-global-opening-japanese-film",
+    "note": "34% of the worldwide total. Biggest global IMAX opening for a Japanese film."
+  },
+  {
+    "id": "godzilla-012",
+    "film": "godzilla",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "metric": "gross",
+    "territory": "US-CA",
+    "format": "IMAX",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Opening weekend"
+    },
+    "amount": 12700000,
+    "unit": "USD",
+    "source": "imax",
+    "url": "https://www.imax.com/pr/godzilla-minus-zero-stomps-biggest-global-opening-japanese-film",
+    "note": "40% of the North American total: IMAX's biggest domestic opening-weekend share."
+  }
+]

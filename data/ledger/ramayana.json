@@ -1,0 +1,1200 @@
+[
+  {
+    "id": "ramayana-001",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-05",
+      "day": 1
+    },
+    "amount": 64.85,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/movie/ramayana_part_1_2026"
+  },
+  {
+    "id": "ramayana-002",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-06",
+      "day": 2
+    },
+    "amount": 48.05,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_2"
+  },
+  {
+    "id": "ramayana-003",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-07",
+      "day": 3
+    },
+    "amount": 69.8,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_3"
+  },
+  {
+    "id": "ramayana-004",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-08",
+      "day": 4
+    },
+    "amount": 56.15,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_4"
+  },
+  {
+    "id": "ramayana-005",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 107.5,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_5"
+  },
+  {
+    "id": "ramayana-006",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-10",
+      "day": 6
+    },
+    "amount": 94.1,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_6"
+  },
+  {
+    "id": "ramayana-007",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 70.65,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-008",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-12",
+      "day": 8
+    },
+    "amount": 53.5,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_8"
+  },
+  {
+    "id": "ramayana-009",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-13",
+      "day": 9
+    },
+    "amount": 48.1,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_9"
+  },
+  {
+    "id": "ramayana-010",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-14",
+      "day": 10
+    },
+    "amount": 72.9,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_10",
+    "note": "Day 10 reported via Free Press Journal citing Sacnilk; early live figures for the day were far lower (₹18.13 Cr afternoon, ₹50.51 Cr evening)."
+  },
+  {
+    "id": "ramayana-011",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-05",
+      "day": 1
+    },
+    "amount": 62.47,
+    "unit": "INR_CR",
+    "source": "bollywoodhungama",
+    "url": "https://www.bollywoodhungama.com/movie/ramayana-part-i/box-office/"
+  },
+  {
+    "id": "ramayana-012",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 103.47,
+    "unit": "INR_CR",
+    "source": "bollywoodhungama",
+    "url": "https://www.bollywoodhungama.com/movie/ramayana-part-i/box-office/"
+  },
+  {
+    "id": "ramayana-013",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-13",
+      "day": 9
+    },
+    "amount": 45.5,
+    "unit": "INR_CR",
+    "source": "bollywoodhungama",
+    "url": "https://www.bollywoodhungama.com/movie/ramayana-part-i/box-office/"
+  },
+  {
+    "id": "ramayana-014",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 115.25,
+    "unit": "INR_CR",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/daily-breakdown/ramayana-day-wise-box-office-collection/"
+  },
+  {
+    "id": "ramayana-015",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-05",
+      "day": 1
+    },
+    "amount": 77.5,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/movie/ramayana_part_1_2026"
+  },
+  {
+    "id": "ramayana-016",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "language": "Hindi",
+    "period": {
+      "type": "day",
+      "date": "2026-11-05",
+      "day": 1
+    },
+    "amount": 47.5,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/movie/ramayana_part_1_2026",
+    "note": "Hindi version only. Not the all-language India net."
+  },
+  {
+    "id": "ramayana-017",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "OS",
+    "period": {
+      "type": "day",
+      "date": "2026-11-05",
+      "day": 1
+    },
+    "amount": 51.25,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/movie/ramayana_part_1_2026"
+  },
+  {
+    "id": "ramayana-018",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "OS",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 35,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-019",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "OS",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 333.5,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-020",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-11",
+      "throughDay": 7
+    },
+    "amount": 944.55,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-021",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "OS",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-12",
+      "throughDay": 8
+    },
+    "amount": 358.5,
+    "unit": "INR_CR",
+    "source": "businessstandard",
+    "url": "https://www.business-standard.com/entertainment/ramayana-box-office-collection-crosses-rs-1-000-crore-worldwide-in-8-days-nc-126111301215_1.html"
+  },
+  {
+    "id": "ramayana-022",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-12",
+      "throughDay": 8
+    },
+    "amount": 1033.55,
+    "unit": "INR_CR",
+    "source": "businessstandard",
+    "url": "https://www.business-standard.com/entertainment/ramayana-box-office-collection-crosses-rs-1-000-crore-worldwide-in-8-days-nc-126111301215_1.html"
+  },
+  {
+    "id": "ramayana-023",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-13",
+      "throughDay": 9
+    },
+    "amount": 630.18,
+    "unit": "INR_CR",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/daily-breakdown/ramayana-day-wise-box-office-collection/"
+  },
+  {
+    "id": "ramayana-024",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-13",
+      "throughDay": 9
+    },
+    "amount": 743.61,
+    "unit": "INR_CR",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/daily-breakdown/ramayana-day-wise-box-office-collection/"
+  },
+  {
+    "id": "ramayana-025",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-13",
+      "throughDay": 9
+    },
+    "amount": 1118.21,
+    "unit": "INR_CR",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/daily-breakdown/ramayana-day-wise-box-office-collection/"
+  },
+  {
+    "id": "ramayana-026",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "OS",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-14",
+      "throughDay": 10
+    },
+    "amount": 408.5,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_10"
+  },
+  {
+    "id": "ramayana-027",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-14",
+      "throughDay": 10
+    },
+    "amount": 1228,
+    "unit": "INR_CR",
+    "source": "freepressjournal",
+    "url": "https://www.freepressjournal.in/entertainment/ramayana-box-office-collection-day-10-ranbir-kapoor-sai-pallavi-and-yashs-film-bounces-back-after-second-friday-dip-earns-7290-crore",
+    "note": "Cites Sacnilk."
+  },
+  {
+    "id": "ramayana-028",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 55000000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "Sony-reported weekend; Ramayana's India run had started Thu Nov 5, so Day 1 sits outside this window."
+  },
+  {
+    "id": "ramayana-029",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 52200000,
+    "unit": "USD",
+    "source": "screendaily",
+    "url": "https://www.screendaily.com/news/godzilla-minus-zero-roars-with-63m-at-global-box-office-ramayana-rise-of-a-legend-strong-with-522m-the-cat-in-the-hat-leads-us-openers/5222148.article"
+  },
+  {
+    "id": "ramayana-030",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 32000000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/"
+  },
+  {
+    "id": "ramayana-031",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "US",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 12200000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "Reported as 'U.S.'; Deadline does not split Canada."
+  },
+  {
+    "id": "ramayana-032",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "INTL_OTHER",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 11500000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "37 remaining territories, combined. No country split published."
+  },
+  {
+    "id": "ramayana-033",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "format": "IMAX",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 2000000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/"
+  },
+  {
+    "id": "ramayana-034",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "US-CA",
+    "format": "IMAX",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 2500000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "53 IMAX screens.",
+    "screens": 53
+  },
+  {
+    "id": "ramayana-035",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "estimated",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "INTL_OTHER",
+    "format": "IMAX",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "label": "Global weekend Nov 6–8"
+    },
+    "amount": 1400000,
+    "unit": "USD",
+    "source": "deadline",
+    "url": "https://deadline.com/2026/11/box-office-global-godzilla-minus-zero-ramayana-rise-of-a-legend-1237216698/",
+    "note": "32 other international territories."
+  },
+  {
+    "id": "ramayana-036",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "region": "Maharashtra",
+    "period": {
+      "type": "cume",
+      "asOf": null,
+      "throughDay": null
+    },
+    "amount": 117,
+    "unit": "INR_CR",
+    "source": "bollywoodhungama",
+    "url": "https://www.bollywoodhungama.com/news/box-office-special-features/where-did-india-watch-ramayana-maharashtra-tops-with-rs-117-crores-karnataka-stuns-by-beating-ncr-gujarats-performance-surprises/",
+    "note": "Cumulative net to the article's publication date; the article does not state the exact cutoff day."
+  },
+  {
+    "id": "ramayana-037",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "region": "Karnataka",
+    "period": {
+      "type": "cume",
+      "asOf": null,
+      "throughDay": null
+    },
+    "amount": 86.16,
+    "unit": "INR_CR",
+    "source": "bollywoodhungama",
+    "url": "https://www.bollywoodhungama.com/news/box-office-special-features/where-did-india-watch-ramayana-maharashtra-tops-with-rs-117-crores-karnataka-stuns-by-beating-ncr-gujarats-performance-surprises/",
+    "note": "Cumulative net to the article's publication date; the article does not state the exact cutoff day."
+  },
+  {
+    "id": "ramayana-038",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "region": "Kerala",
+    "period": {
+      "type": "cume",
+      "asOf": null,
+      "throughDay": null
+    },
+    "amount": 25.72,
+    "unit": "INR_CR",
+    "source": "bollywoodhungama",
+    "url": "https://www.bollywoodhungama.com/news/box-office-special-features/where-did-india-watch-ramayana-maharashtra-tops-with-rs-117-crores-karnataka-stuns-by-beating-ncr-gujarats-performance-surprises/",
+    "note": "Cumulative net to the article's publication date; the article does not state the exact cutoff day."
+  },
+  {
+    "id": "ramayana-039",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "net",
+    "territory": "IN",
+    "region": "Tamil Nadu",
+    "period": {
+      "type": "cume",
+      "asOf": null,
+      "throughDay": null
+    },
+    "amount": 25.56,
+    "unit": "INR_CR",
+    "source": "bollywoodhungama",
+    "url": "https://www.bollywoodhungama.com/news/box-office-special-features/where-did-india-watch-ramayana-maharashtra-tops-with-rs-117-crores-karnataka-stuns-by-beating-ncr-gujarats-performance-surprises/",
+    "note": "Cumulative net to the article's publication date; the article does not state the exact cutoff day."
+  },
+  {
+    "id": "ramayana-040",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Karnataka",
+    "period": {
+      "type": "day",
+      "date": "2026-11-06",
+      "day": 2
+    },
+    "amount": 10,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_2"
+  },
+  {
+    "id": "ramayana-041",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Karnataka",
+    "period": {
+      "type": "day",
+      "date": "2026-11-07",
+      "day": 3
+    },
+    "amount": 13.55,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_3"
+  },
+  {
+    "id": "ramayana-042",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Karnataka",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 16.1,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_5"
+  },
+  {
+    "id": "ramayana-043",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Karnataka",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 9.4,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-044",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Karnataka",
+    "period": {
+      "type": "day",
+      "date": "2026-11-13",
+      "day": 9
+    },
+    "amount": 7.15,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_9"
+  },
+  {
+    "id": "ramayana-045",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Andhra Pradesh & Telangana",
+    "period": {
+      "type": "day",
+      "date": "2026-11-06",
+      "day": 2
+    },
+    "amount": 7,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_2"
+  },
+  {
+    "id": "ramayana-046",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Andhra Pradesh & Telangana",
+    "period": {
+      "type": "day",
+      "date": "2026-11-07",
+      "day": 3
+    },
+    "amount": 9.15,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_3"
+  },
+  {
+    "id": "ramayana-047",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Andhra Pradesh & Telangana",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 9,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_5"
+  },
+  {
+    "id": "ramayana-048",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Andhra Pradesh & Telangana",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 3.75,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-049",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Andhra Pradesh & Telangana",
+    "period": {
+      "type": "day",
+      "date": "2026-11-13",
+      "day": 9
+    },
+    "amount": 3.6,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_9"
+  },
+  {
+    "id": "ramayana-050",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Tamil Nadu",
+    "period": {
+      "type": "day",
+      "date": "2026-11-06",
+      "day": 2
+    },
+    "amount": 2.35,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_2"
+  },
+  {
+    "id": "ramayana-051",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Tamil Nadu",
+    "period": {
+      "type": "day",
+      "date": "2026-11-07",
+      "day": 3
+    },
+    "amount": 3.75,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_3"
+  },
+  {
+    "id": "ramayana-052",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Tamil Nadu",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 4.8,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_5"
+  },
+  {
+    "id": "ramayana-053",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Tamil Nadu",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 3.4,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-054",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Tamil Nadu",
+    "period": {
+      "type": "day",
+      "date": "2026-11-13",
+      "day": 9
+    },
+    "amount": 3.55,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_9"
+  },
+  {
+    "id": "ramayana-055",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Kerala",
+    "period": {
+      "type": "day",
+      "date": "2026-11-06",
+      "day": 2
+    },
+    "amount": 2.15,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_2"
+  },
+  {
+    "id": "ramayana-056",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Kerala",
+    "period": {
+      "type": "day",
+      "date": "2026-11-07",
+      "day": 3
+    },
+    "amount": 3.5,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_3"
+  },
+  {
+    "id": "ramayana-057",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Kerala",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 3.9,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_5"
+  },
+  {
+    "id": "ramayana-058",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Kerala",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 3.75,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7"
+  },
+  {
+    "id": "ramayana-059",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Kerala",
+    "period": {
+      "type": "day",
+      "date": "2026-11-13",
+      "day": 9
+    },
+    "amount": 4.4,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_9"
+  },
+  {
+    "id": "ramayana-060",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross_tracked",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-06",
+      "day": 2
+    },
+    "amount": 57.3,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_2",
+    "note": "Sum of tracked state-wise gross that day, not total India gross."
+  },
+  {
+    "id": "ramayana-061",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross_tracked",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-07",
+      "day": 3
+    },
+    "amount": 83.45,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_3",
+    "note": "Sum of tracked state-wise gross that day, not total India gross."
+  },
+  {
+    "id": "ramayana-062",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross_tracked",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-09",
+      "day": 5
+    },
+    "amount": 128.7,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_5",
+    "note": "Sum of tracked state-wise gross that day, not total India gross."
+  },
+  {
+    "id": "ramayana-063",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross_tracked",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "date": "2026-11-11",
+      "day": 7
+    },
+    "amount": 84.55,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_7",
+    "note": "Sum of tracked state-wise gross that day, not total India gross."
+  },
+  {
+    "id": "ramayana-064",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "live",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "Maharashtra",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 155.67,
+    "unit": "INR_CR",
+    "source": "tracktollywood",
+    "url": "https://tracktollywood.com/box-office-collection/ramayana-part-1/",
+    "note": "Includes live Day 11 tracking."
+  },
+  {
+    "id": "ramayana-065",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "live",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "city": "Bengaluru",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 82.61,
+    "unit": "INR_CR",
+    "source": "tracktollywood",
+    "url": "https://tracktollywood.com/box-office-collection/ramayana-part-1/",
+    "note": "Includes live Day 11 tracking."
+  },
+  {
+    "id": "ramayana-066",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "gross",
+    "territory": "IN",
+    "region": "South (4 states)",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-07",
+      "throughDay": 3
+    },
+    "amount": 82.2,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/news/ramayana-crosses-200-crore-india-net-in-live-tracking-as-south-gross-tops-adipurushs-non-telugu-markets-by-34-times"
+  },
+  {
+    "id": "ramayana-067",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "film": "ramayana",
+    "metric": "milestone",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-12",
+      "throughDay": 8
+    },
+    "amount": 1000,
+    "unit": "INR_CR",
+    "source": "businessstandard",
+    "url": "https://www.business-standard.com/entertainment/ramayana-box-office-collection-crosses-rs-1-000-crore-worldwide-in-8-days-nc-126111301215_1.html",
+    "note": "Crossed ₹1,000 Cr worldwide in 8 days."
+  }
+]

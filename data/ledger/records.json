@@ -1,0 +1,517 @@
+[
+  {
+    "id": "rec-001",
+    "film": "dangal",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 2070.3,
+    "unit": "INR_CR",
+    "source": "koimoi",
+    "url": "https://www.koimoi.com/box-office/bollywoods-top-worldwide-grossers/",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "note": "About ₹1,300 Cr+ came from mainland China."
+  },
+  {
+    "id": "rec-002",
+    "film": "dhurandhar-2",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1852.44,
+    "unit": "INR_CR",
+    "source": "wikipedia",
+    "url": "https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final"
+  },
+  {
+    "id": "rec-003",
+    "film": "baahubali-2",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1810.43,
+    "unit": "INR_CR",
+    "source": "wikipedia",
+    "url": "https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "note": "Other trackers: ~₹1,788 Cr."
+  },
+  {
+    "id": "rec-004",
+    "film": "pushpa-2",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1800,
+    "unit": "INR_CR",
+    "source": "wikipedia",
+    "url": "https://en.wikipedia.org/wiki/List_of_highest-grossing_Indian_films",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "final",
+    "note": "Range across trackers ₹1,727–1,800 Cr."
+  },
+  {
+    "id": "rec-005",
+    "film": "dhurandhar",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1307,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "Reported range ₹1,307–1,428 Cr depending on tracker; low end shown."
+  },
+  {
+    "id": "rec-006",
+    "film": "rrr",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1230,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "Commonly cited ₹1,230–1,387 Cr."
+  },
+  {
+    "id": "rec-007",
+    "film": "kgf-2",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1215,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "Commonly cited ₹1,200–1,250 Cr."
+  },
+  {
+    "id": "rec-008",
+    "film": "jawan",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1160,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "Producer-reported."
+  },
+  {
+    "id": "rec-009",
+    "film": "pathaan",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1050,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "Producer-reported."
+  },
+  {
+    "id": "rec-010",
+    "film": "bajrangi-bhaijaan",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 918,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "Includes China."
+  },
+  {
+    "id": "rec-011",
+    "film": "animal",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 917,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "Producer-reported."
+  },
+  {
+    "id": "rec-012",
+    "film": "stree-2",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 857,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference"
+  },
+  {
+    "id": "rec-013",
+    "film": "pk",
+    "metric": "gross",
+    "territory": "WW",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 769,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference"
+  },
+  {
+    "id": "rec-014",
+    "film": "pushpa-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1234.1,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-015",
+    "film": "baahubali-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 1030.42,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-016",
+    "film": "kgf-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 859.7,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-017",
+    "film": "rrr",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 782.2,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-018",
+    "film": "jawan",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 640.25,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-019",
+    "film": "stree-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 627.5,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-020",
+    "film": "animal",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 553.87,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-021",
+    "film": "pathaan",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 543.09,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-022",
+    "film": "dangal",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 387.38,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "note": "All-language India net, Sacnilk-style ledger."
+  },
+  {
+    "id": "rec-023",
+    "film": "pushpa-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 830.1,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "language": "Hindi",
+    "note": "Hindi dubbed version only"
+  },
+  {
+    "id": "rec-024",
+    "film": "stree-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 597.99,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "language": "Hindi"
+  },
+  {
+    "id": "rec-025",
+    "film": "pathaan",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 524.53,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "language": "Hindi"
+  },
+  {
+    "id": "rec-026",
+    "film": "baahubali-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 510.99,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "language": "Hindi",
+    "note": "Hindi dubbed version only"
+  },
+  {
+    "id": "rec-027",
+    "film": "animal",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "lifetime"
+    },
+    "amount": 502.98,
+    "unit": "INR_CR",
+    "source": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "status": "reference",
+    "language": "Hindi",
+    "note": "Hindi version only"
+  },
+  {
+    "id": "rec-028",
+    "film": "pushpa-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "day": 1
+    },
+    "amount": 164.25,
+    "unit": "INR_CR",
+    "source": "reference",
+    "status": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z",
+    "note": "Includes paid previews"
+  },
+  {
+    "id": "rec-029",
+    "film": "rrr",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "day": 1
+    },
+    "amount": 133,
+    "unit": "INR_CR",
+    "source": "reference",
+    "status": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z"
+  },
+  {
+    "id": "rec-030",
+    "film": "baahubali-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "day": 1
+    },
+    "amount": 121,
+    "unit": "INR_CR",
+    "source": "reference",
+    "status": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z"
+  },
+  {
+    "id": "rec-031",
+    "film": "kgf-2",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "day": 1
+    },
+    "amount": 116,
+    "unit": "INR_CR",
+    "source": "reference",
+    "status": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z"
+  },
+  {
+    "id": "rec-032",
+    "film": "jawan",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "day": 1
+    },
+    "amount": 75,
+    "unit": "INR_CR",
+    "source": "reference",
+    "status": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z"
+  },
+  {
+    "id": "rec-033",
+    "film": "animal",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "day": 1
+    },
+    "amount": 63.8,
+    "unit": "INR_CR",
+    "source": "reference",
+    "status": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z"
+  },
+  {
+    "id": "rec-034",
+    "film": "pathaan",
+    "metric": "net",
+    "territory": "IN",
+    "period": {
+      "type": "day",
+      "day": 1
+    },
+    "amount": 57,
+    "unit": "INR_CR",
+    "source": "reference",
+    "status": "reference",
+    "retrievedAt": "2026-11-15T03:50:00Z"
+  }
+]
