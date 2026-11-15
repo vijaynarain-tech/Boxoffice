@@ -1,9 +1,14 @@
 {
-  "status": "pending",
+  "status": "ok",
   "base": "USD",
-  "rates": null,
-  "date": null,
+  "rates": {
+    "INR": 94.25,
+    "JPY": 160,
+    "GBP": 0.75605,
+    "EUR": 0.90481,
+    "CAD": 1.4258
+  },
+  "date": "2026-11-13",
   "source": "frankfurter",
-  "fetchedAt": null,
-  "note": "Filled on the first scheduled run. No rate is assumed until then."
+  "fetchedAt": "2026-11-15T16:30:56.743Z"
 }
