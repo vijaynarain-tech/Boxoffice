@@ -1,5 +1,5 @@
 import { useEffect, useState, type ComponentType } from "react";
-import { Clapperboard, RefreshCw } from "lucide-react";
+import { Clapperboard, Instagram, RefreshCw } from "lucide-react";
 import { site, dateTimeIST, lastUpdate } from "./data";
 import Overview from "./pages/Overview";
 import Ramayana from "./pages/Ramayana";
@@ -98,9 +98,26 @@ export default function App() {
         <Page />
       </main>
       <footer className="border-t border-line">
-        <div className="gutter mx-auto flex max-w-[1280px] flex-col gap-2 py-6 text-xs text-mute sm:flex-row sm:justify-between">
-          <span>Every figure links to the report it came from. Figures marked Unverified, Estimated or Projection are labelled where they appear.</span>
-          <span>Data refreshed 08:00 · 15:00 · 22:00 IST</span>
+        <div className="gutter mx-auto flex max-w-[1280px] flex-col gap-4 py-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="text-sm">
+              <span className="text-mute">Made by </span>
+              <span className="font-display font-bold text-fg">Vijay Narain Meena</span>
+            </div>
+            <a
+              href="https://www.instagram.com/vijay.narain.meena/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-fit items-center gap-2 rounded-lg border border-line bg-surface px-3 py-1.5 text-sm text-fg transition hover:border-ram/50 hover:text-ram"
+            >
+              <Instagram size={15} aria-hidden />
+              @vijay.narain.meena
+            </a>
+          </div>
+          <div className="flex flex-col gap-2 border-t border-line/60 pt-4 text-xs text-mute sm:flex-row sm:justify-between">
+            <span>Every figure links to the report it came from. Figures marked Unverified, Estimated or Projection are labelled where they appear.</span>
+            <span>Data refreshed 08:00 · 15:00 · 22:00 IST</span>
+          </div>
         </div>
       </footer>
     </div>

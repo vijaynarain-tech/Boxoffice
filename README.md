@@ -1,5 +1,7 @@
 # Box Office Intelligence
 
+Made by **Vijay Narain Meena** · Instagram [@vijay.narain.meena](https://www.instagram.com/vijay.narain.meena/)
+
 Source-verified box office tracking for **Ramayana: Rise of a Legend** (2026) and **Godzilla Minus Zero** (2026), with Indian all-time records, a head-to-head comparison and scenario forecasts.
 
 No login, no database. The site is a static React app built from a JSON dataset that a scheduled job regenerates three times a day.
