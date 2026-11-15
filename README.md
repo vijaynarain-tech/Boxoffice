@@ -34,7 +34,7 @@ Automated today: exchange rates from the ECB via [Frankfurter](https://www.frank
 
 ## Schedule
 
-`.github/workflows/update-data.yml` runs at 08:00, 15:00 and 22:00 IST (`30 2,9,16 * * *` UTC) and on demand. It runs the pipeline, checks the site builds, and commits the new dataset. Scheduled workflows only run on the **default branch**, so merge this branch to `main` to start them.
+`.github/workflows/update-data.yml` runs at 08:00, 15:00 and 22:00 IST (`30 2,9,16 * * *` UTC) and on demand. It runs the pipeline, checks the site builds, and commits the new dataset. Scheduled workflows only run on the repository's **default branch**.
 
 ## Run locally
 
@@ -50,7 +50,7 @@ npm run build:preview     # one self-contained HTML file in dist-preview/
 ## Deploy
 
 * **Vercel:** import the repo; `vercel.json` sets the build. Each data commit redeploys automatically.
-* **GitHub Pages:** enable *Settings → Pages → GitHub Actions*; `.github/workflows/deploy-pages.yml` deploys on every push to `main`.
+* **GitHub Pages (public, no login):** in *Settings → Pages*, set *Source* to **GitHub Actions**. `.github/workflows/deploy-pages.yml` then deploys on every push to the default branch and after every scheduled data update. Live at `https://vijaynarain-tech.github.io/boxoffice/`.
 
 ## Images
 
