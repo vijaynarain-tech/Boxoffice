@@ -42,7 +42,8 @@
     "region": "India",
     "access": "manual",
     "accessNote": "News report citing trade trackers.",
-    "reliability": "Secondary report."
+    "reliability": "Secondary report.",
+    "cites": "sacnilk"
   },
   {
     "id": "freepressjournal",
@@ -51,7 +52,8 @@
     "region": "India",
     "access": "manual",
     "accessNote": "News report citing Sacnilk.",
-    "reliability": "Secondary report."
+    "reliability": "Secondary report.",
+    "cites": "sacnilk"
   },
   {
     "id": "tracktollywood",
@@ -231,7 +233,8 @@
     "id": "theweek",
     "name": "The Week",
     "url": "https://www.theweek.in/",
-    "reliability": "Secondary report of Toho announcements."
+    "reliability": "Secondary report of Toho announcements.",
+    "cites": "sacnilk"
   },
   {
     "access": "manual",
@@ -240,7 +243,8 @@
     "name": "India.com",
     "url": "https://www.india.com/",
     "region": "India",
-    "reliability": "Secondary report citing Sacnilk."
+    "reliability": "Secondary report citing Sacnilk.",
+    "cites": "sacnilk"
   },
   {
     "access": "manual",
@@ -249,7 +253,8 @@
     "name": "DNA India",
     "url": "https://www.dnaindia.com/",
     "region": "India",
-    "reliability": "Secondary report citing Sacnilk."
+    "reliability": "Secondary report citing Sacnilk.",
+    "cites": "sacnilk"
   },
   {
     "access": "manual",
@@ -277,5 +282,43 @@
     "url": "https://www.businesstoday.com.my/",
     "region": "Global",
     "reliability": "Secondary report citing Deadline."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "etvbharat",
+    "name": "ETV Bharat",
+    "url": "https://www.etvbharat.com/",
+    "region": "India",
+    "reliability": "Secondary report citing Sacnilk.",
+    "cites": "sacnilk"
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "greatandhra",
+    "name": "Great Andhra",
+    "url": "https://www.greatandhra.com/",
+    "region": "India",
+    "reliability": "Trade report; overseas figures do not always reconcile."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "theopenpress",
+    "name": "The Open Press",
+    "url": "https://theopenpress.in/",
+    "region": "India",
+    "reliability": "Aggregated estimates; often early."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "filmibeat",
+    "name": "Filmibeat",
+    "url": "https://www.filmibeat.com/",
+    "region": "India",
+    "reliability": "Secondary report citing Sacnilk.",
+    "cites": "sacnilk"
   }
 ]

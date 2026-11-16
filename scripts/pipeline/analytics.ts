@@ -15,7 +15,7 @@ export const STATUS_RANK: Record<Observation["status"], number> = {
 
 /** Which tracker wins when several report the same figure. */
 export const SOURCE_PRIORITY: Record<string, string[]> = {
-  ramayana: ["sacnilk", "koimoi", "bollywoodhungama", "businessstandard", "freepressjournal", "tracktollywood", "deadline", "screendaily"],
+  ramayana: ["sacnilk", "indiacom", "dnaindia", "freepressjournal", "businessstandard", "etvbharat", "theweek", "filmibeat", "koimoi", "bollywoodhungama", "tracktollywood", "deadline", "screendaily"],
   godzilla: ["boxofficemojo", "thenumbers", "imax", "variety", "thr", "deadline", "worldofreel", "rollingout", "screenrant"],
 };
 

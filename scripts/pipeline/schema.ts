@@ -45,6 +45,7 @@ export const Source = z.object({
   access: z.enum(["manual", "api", "licensed"]),
   accessNote: z.string(),
   reliability: z.string(),
+  cites: z.string().optional(),
 });
 export type Source = z.infer<typeof Source>;
 

@@ -16,6 +16,7 @@ import { z } from "zod";
 import { Observation, Source, FxState, FrankfurterResponse } from "./schema.ts";
 import { buildRamayana, findConflicts, detectRevisions, pickPrimary, round, figureKey } from "./analytics.ts";
 import { forecastRamayana, forecastGodzilla, chinaSensitivity } from "./forecast.ts";
+import { buildLedgers, buildLanguages } from "./daily.ts";
 
 const ROOT = path.resolve(import.meta.dirname, "../..");
 const P = (...p: string[]) => path.join(ROOT, ...p);
@@ -89,7 +90,7 @@ function crossChecks(obs: Observation[], sources: Source[], today: string, steps
   const cumes = obs.filter((o) => o.period.type === "cume" && o.period.throughDay);
   const series = new Map<string, Observation[]>();
   for (const o of cumes) {
-    const k = [o.film, o.metric, o.territory, o.region, o.city, o.source, o.unit].join("|");
+    const k = [o.film, o.metric, o.territory, o.region, o.city, o.language, o.format, o.source, o.unit].join("|");
     series.set(k, [...(series.get(k) ?? []), o]);
   }
   for (const [k, s] of series) {
@@ -266,7 +267,7 @@ async function main() {
       observations: obs,
       conflicts,
       revisions,
-      ramayana: { ...ram, regions, intlWeekend, forecast: ramFc, china: chinaSensitivity(baseWW) },
+      ramayana: { ...ram, regions, intlWeekend, forecast: ramFc, china: chinaSensitivity(baseWW), ledgers: buildLedgers(obs, sources, ramMeta.releaseDate, ram.lastReportedDay), languages: buildLanguages(obs, ramMeta.releaseDate, ram.lastReportedDay) },
       godzilla: { figures: gz, theaters, avgPerTheaterOpening: gz.naOpening ? round(gz.naOpening.amount / theaters, 0) : null, forecast: gzFc },
       headToHead,
       leaderboards: lb,

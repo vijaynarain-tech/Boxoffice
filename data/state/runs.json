@@ -1,5 +1,198 @@
 [
   {
+    "startedAt": "2026-11-16T19:42:38.695Z",
+    "finishedAt": "2026-11-16T19:42:38.807Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "357 observations · 32 conflicts · 0 revisions · Ramayana Day 11 · FX ok",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "357 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "32 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  },
+  {
+    "startedAt": "2026-11-16T19:40:57.765Z",
+    "finishedAt": "2026-11-16T19:40:57.893Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "357 observations · 32 conflicts · 0 revisions · Ramayana Day 11 · FX ok",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "357 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "32 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  },
+  {
+    "startedAt": "2026-11-16T19:40:51.854Z",
+    "finishedAt": "2026-11-16T19:40:51.962Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "357 observations · 32 conflicts · 0 revisions · Ramayana Day 11 · FX ok",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "357 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "32 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  },
+  {
+    "startedAt": "2026-11-16T19:38:52.252Z",
+    "finishedAt": "2026-11-16T19:38:52.363Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "357 observations · 32 conflicts · 0 revisions · Ramayana Day 11 · FX ok",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "357 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "32 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  },
+  {
+    "startedAt": "2026-11-16T19:34:31.478Z",
+    "finishedAt": "2026-11-16T19:34:31.594Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "338 observations · 32 conflicts · 0 revisions · Ramayana Day 11 · FX ok",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "338 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "32 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  },
+  {
+    "startedAt": "2026-11-16T19:34:07.917Z",
+    "finishedAt": "2026-11-16T19:34:07.977Z",
+    "trigger": "local",
+    "status": "success",
+    "summary": "338 observations · 32 conflicts · 2 revisions · Ramayana Day 11 · FX ok",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "338 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "Skipped (offline run). Kept previous rates."
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "32 source conflict(s), 2 new revision(s)"
+      }
+    ]
+  },
+  {
+    "startedAt": "2026-11-16T19:34:01.062Z",
+    "finishedAt": "2026-11-16T19:34:01.121Z",
+    "trigger": "local",
+    "status": "failed",
+    "summary": "Failed: Cross-checks failed: 7 issue(s). Previous dataset kept.",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "338 observations valid (0 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": false,
+        "detail": "ramayana|net|IN|||sacnilk|INR_CR: cumulative fell from 41.2 to 33 | ramayana|net|IN|||sacnilk|INR_CR: cumulative fell from 33 to 17.35 | ramayana|net|IN|||sacnilk|INR_CR: cumulative fell from 17.35 to 12.9 | ramayana|net|IN|||sacnilk|INR_CR: cumulative fell from 582.25 to 63.1 | ramayana|net|IN|||sacnilk|INR_CR: cumulative fell from 63.1 to 49.4 | ramayana|net|IN|||sacnilk|INR_CR: cumulative fell from 49.4 to 34.4 | ramayana|net|IN|||sacnilk|INR_CR: cumulative fell from 34.4 to 31.45"
+      }
+    ]
+  },
+  {
     "startedAt": "2026-11-16T15:58:58.260Z",
     "finishedAt": "2026-11-16T15:58:58.309Z",
     "trigger": "local",

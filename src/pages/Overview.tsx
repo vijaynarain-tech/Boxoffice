@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { ArrowRight, Trophy } from "lucide-react";
-import { site, ramMeta, gzMeta, cr, usd, jpy, date, dateTimeIST, sourceName } from "../data";
+import { site, ramMeta, gzMeta, cr, usd, jpy, money, date, dateTimeIST, sourceName } from "../data";
 import { RamayanaPoster, GodzillaPoster } from "../components/Posters";
 import { Card, Change, Note, Section, Stat, StatusPill, SourceTag } from "../components/ui";
 
@@ -69,6 +70,7 @@ function HeroPanel({ side }: { side: "ram" | "godz" }) {
 }
 
 export default function Overview() {
+  const [showAll, setShowAll] = useState(false);
   const t = site.trackers.worldwide!;
   const base = site.ramayana.forecast.scenarios[1];
   const gb = site.godzilla.forecast.scenarios[1];
@@ -163,7 +165,7 @@ export default function Overview() {
 
       <Section eyebrow="Data health" title="Conflicts between sources" intro="When trackers disagree, the site shows the primary figure and lists the others. Nothing is averaged.">
         <div className="grid gap-3 md:grid-cols-2">
-          {site.conflicts.map((c) => (
+          {site.conflicts.slice(0, showAll ? undefined : 6).map((c) => (
             <Card key={c.key}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0 text-sm font-medium">{c.label}</div>
@@ -176,13 +178,18 @@ export default function Overview() {
                       <SourceTag id={v.source} url={v.url} compact />
                       {v.source === c.primary.source && <span className="rounded bg-raised px-1.5 py-0.5 text-[10px] font-semibold text-fg">Primary</span>}
                     </span>
-                    <span className="num text-fg">{c.key.endsWith("USD") ? usd(v.amount) : cr(v.amount)}</span>
+                    <span className="num text-fg">{(() => { const u = c.key.split("|").at(-1)!; return u === "PCT" ? `${v.amount}%` : u === "COUNT" ? v.amount.toLocaleString("en-IN") : money(v.amount, u); })()}</span>
                   </li>
                 ))}
               </ul>
             </Card>
           ))}
         </div>
+        {site.conflicts.length > 6 && (
+          <button onClick={() => setShowAll((v) => !v)} className="w-fit rounded-lg border border-line px-3 py-1.5 text-xs font-semibold text-mute hover:border-mute/40 hover:text-fg">
+            {showAll ? "Show the 6 largest" : `Show all ${site.conflicts.length} conflicts`}
+          </button>
+        )}
         <div className="flex flex-wrap items-center gap-2 text-xs text-mute">
           <Trophy size={14} aria-hidden /> {succeeded.length} successful update run{succeeded.length === 1 ? "" : "s"} logged. Primary source for India figures: {sourceName("sacnilk")}. <a className="text-godz-2 hover:underline" href="#methodology">How figures are chosen</a>
         </div>

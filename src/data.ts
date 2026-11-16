@@ -123,3 +123,26 @@ export const addDaysISO = (iso: string, n: number) => {
   d.setUTCDate(d.getUTCDate() + n);
   return d.toISOString().slice(0, 10);
 };
+
+/* ---------- day-wise ledgers and language tables (typed views of the generated JSON) ---------- */
+export interface LCell { v: number; src: string; kind: "reported" | "derived" | "fallback" | string; status?: string; how?: string; url?: string }
+export interface LedgerRow {
+  day: number; date: string; weekday: string; isWeekend: boolean;
+  net: LCell | null; alt: { src: string; v: number }[]; cumNet: number | null; changePct: number | null;
+  indiaGross: LCell | null; overseas: LCell | null; worldwide: LCell | null; cumWorldwide: LCell | null;
+  shows: LCell | null; showsScope: string; occupancy: LCell | null; occScope: string; tickets: LCell | null;
+}
+export interface Ledger { rows: LedgerRow[]; coverage: Record<string, { filled: number; total: number }> }
+export const ledgers = site.ramayana.ledgers as unknown as Record<"sacnilk" | "koimoi", Ledger>;
+
+export interface LangDay { day: number; date: string; live: boolean; total: number | null; by: Record<string, { net: LCell | null; shows: number | null; occupancy: number | null }> }
+export interface LangModel {
+  table: LangDay[];
+  cume: Record<string, { day: number; v: number; src: string; url?: string; note: string | null }[]>;
+  latestDay: number;
+  totals: { language: string; v: number | null; sharePct: number | null }[];
+}
+export const languages = site.ramayana.languages as unknown as LangModel;
+
+export interface Today { day: number; date: string; net: number; gross: number | null; shows: number | null; occupancy: number | null; source: string; url?: string; note: string | null; others: { source: string; amount: number }[] }
+export const today = site.ramayana.headline.today as unknown as Today | null;

@@ -1,19 +1,19 @@
-import { useEffect, useState, type ComponentType } from "react";
+import { Suspense, lazy, useEffect, useState, type ComponentType } from "react";
 import { Clapperboard, Instagram, RefreshCw } from "lucide-react";
 import { site, dateTimeIST, lastUpdate } from "./data";
 import Overview from "./pages/Overview";
-import Ramayana from "./pages/Ramayana";
-import Languages from "./pages/Languages";
-import Regions from "./pages/Regions";
-import Worldwide from "./pages/Worldwide";
-import Advance from "./pages/Advance";
-import Formats from "./pages/Formats";
-import Godzilla from "./pages/Godzilla";
-import Compare from "./pages/Compare";
-import Records from "./pages/Records";
-import Forecast from "./pages/Forecast";
-import China from "./pages/China";
-import Methodology from "./pages/Methodology";
+const Ramayana = lazy(() => import("./pages/Ramayana"));
+const Languages = lazy(() => import("./pages/Languages"));
+const Regions = lazy(() => import("./pages/Regions"));
+const Worldwide = lazy(() => import("./pages/Worldwide"));
+const Advance = lazy(() => import("./pages/Advance"));
+const Formats = lazy(() => import("./pages/Formats"));
+const Godzilla = lazy(() => import("./pages/Godzilla"));
+const Compare = lazy(() => import("./pages/Compare"));
+const Records = lazy(() => import("./pages/Records"));
+const Forecast = lazy(() => import("./pages/Forecast"));
+const China = lazy(() => import("./pages/China"));
+const Methodology = lazy(() => import("./pages/Methodology"));
 
 export const ROUTES: { id: string; label: string; Page: ComponentType }[] = [
   { id: "overview", label: "Overview", Page: Overview },
@@ -95,7 +95,9 @@ export default function App() {
         </nav>
       </header>
       <main className="gutter mx-auto flex max-w-[1280px] flex-col gap-12 pb-20 pt-6 sm:pt-8" key={route}>
-        <Page />
+        <Suspense fallback={<div className="grid min-h-[40vh] place-items-center text-sm text-mute">Loading…</div>}>
+          <Page />
+        </Suspense>
       </main>
       <footer className="border-t border-line">
         <div className="gutter mx-auto flex max-w-[1280px] flex-col gap-4 py-6">
