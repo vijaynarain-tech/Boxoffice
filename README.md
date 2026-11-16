@@ -34,7 +34,7 @@ Automated today: exchange rates from the ECB via [Frankfurter](https://www.frank
 
 ## Schedule
 
-`.github/workflows/update-data.yml` runs at 08:00, 15:00 and 22:00 IST (`30 2,9,16 * * *` UTC) and on demand. It runs the pipeline, checks the site builds, and commits the new dataset. Scheduled workflows only run on the repository's **default branch**.
+`.github/workflows/update-data.yml` runs at 08:00, 15:00 and 22:00 IST and on demand. GitHub can start scheduled runs late or skip them, so each slot has two backup triggers (17 and 53 minutes later); `scripts/pipeline/slot-check.mjs` lets only the first one in a slot do the update. It runs the pipeline, checks the site builds, and commits the new dataset. Scheduled workflows only run on the repository's **default branch**.
 
 ## Run locally
 
@@ -55,3 +55,10 @@ npm run build:preview     # one self-contained HTML file in dist-preview/
 ## Images
 
 Official posters are copyrighted and not licensed for this site, so the site uses original placeholder artwork and links to each film's official listing. Replace the art in `src/components/Posters.tsx` with licensed images if you obtain rights.
+
+## Security
+
+* Static site: no login, no forms, no cookies, no database, no server code. Visitors' data is never collected.
+* No third-party requests: fonts and images are bundled; a Content Security Policy (`vite.config.ts`) blocks scripts and connections from other hosts.
+* Pipeline secrets: none needed. Workflows use only the built-in `GITHUB_TOKEN` with the minimum permissions.
+* Dependabot (`.github/dependabot.yml`) opens weekly PRs for vulnerable or outdated packages and Actions.
