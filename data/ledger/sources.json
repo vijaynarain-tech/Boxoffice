@@ -232,5 +232,50 @@
     "name": "The Week",
     "url": "https://www.theweek.in/",
     "reliability": "Secondary report of Toho announcements."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "indiacom",
+    "name": "India.com",
+    "url": "https://www.india.com/",
+    "region": "India",
+    "reliability": "Secondary report citing Sacnilk."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "dnaindia",
+    "name": "DNA India",
+    "url": "https://www.dnaindia.com/",
+    "region": "India",
+    "reliability": "Secondary report citing Sacnilk."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "zeebiz",
+    "name": "Zee Business",
+    "url": "https://www.zeebiz.com/",
+    "region": "India",
+    "reliability": "Live intraday estimates."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "patrickfrater",
+    "name": "Patrick Frater (Substack)",
+    "url": "https://patrickfrater.substack.com/",
+    "region": "Global",
+    "reliability": "Veteran trade reporter; cites Comscore/Rentrak global estimates and distributors."
+  },
+  {
+    "access": "manual",
+    "accessNote": "News report. Manual entry only.",
+    "id": "businesstodaymy",
+    "name": "Business Today Malaysia",
+    "url": "https://www.businesstoday.com.my/",
+    "region": "Global",
+    "reliability": "Secondary report citing Deadline."
   }
 ]

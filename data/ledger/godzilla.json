@@ -369,5 +369,132 @@
     "source": "thenumbers",
     "url": "https://www.the-numbers.com/movie/Godzilla-Minus-Zero-(2026-Japan)",
     "note": "International running total (includes Japan)."
+  },
+  {
+    "id": "godzilla-021",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "final",
+    "territory": "US-CA",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "label": "Second weekend"
+    },
+    "amount": 8300000,
+    "unit": "USD",
+    "source": "thenumbers",
+    "url": "https://www.the-numbers.com/weekend-box-office-chart",
+    "note": "−73% from opening. #3 for the weekend. Rotten Tomatoes reports the same figure."
+  },
+  {
+    "id": "godzilla-022",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "final",
+    "territory": "US-CA",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 10
+    },
+    "amount": 48800000,
+    "unit": "USD",
+    "source": "thenumbers",
+    "url": "https://www.the-numbers.com/weekend-box-office-chart"
+  },
+  {
+    "id": "godzilla-023",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "territory": "WW",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "label": "Global weekend Nov 13–15"
+    },
+    "amount": 15700000,
+    "unit": "USD",
+    "source": "patrickfrater",
+    "url": "https://patrickfrater.substack.com/p/ramayana-second-worldwide-box-office-godzilla",
+    "note": "Comscore (Rentrak) estimate, #4 worldwide."
+  },
+  {
+    "id": "godzilla-024",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "territory": "WW",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "label": "Global weekend Nov 13–15"
+    },
+    "amount": 15600000,
+    "unit": "USD",
+    "source": "variety",
+    "url": "https://variety.com/2026/film/box-office/johnny-depp-ebenezer-ramayana-godzilla-minus-zero-global-box-office-1236948618/"
+  },
+  {
+    "id": "godzilla-025",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 13
+    },
+    "amount": 104800000,
+    "unit": "USD",
+    "source": "variety",
+    "url": "https://variety.com/2026/film/box-office/johnny-depp-ebenezer-ramayana-godzilla-minus-zero-global-box-office-1236948618/",
+    "note": "Crossed $100M worldwide. Day 13 counts from the Japan release on Nov 3."
+  },
+  {
+    "id": "godzilla-026",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "territory": "WW",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 13
+    },
+    "amount": 89900000,
+    "unit": "USD",
+    "source": "patrickfrater",
+    "url": "https://patrickfrater.substack.com/p/ramayana-second-worldwide-box-office-godzilla",
+    "note": "Rentrak two-weekend cumulative; lower because it covers fewer days/markets."
+  },
+  {
+    "id": "godzilla-027",
+    "film": "godzilla",
+    "metric": "gross",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "territory": "INTL",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 13
+    },
+    "amount": 55100000,
+    "unit": "USD",
+    "source": "businesstodaymy",
+    "url": "https://www.businesstoday.com.my/2026/11/16/ramayana-leads-global-box-office-race-as-godzilla-minus-zero-hits-us104-8-million/",
+    "note": "International (includes Japan), per Deadline."
   }
 ]

@@ -26,7 +26,7 @@ export default function Godzilla() {
           </div>
           <Card>
             <div className="grid grid-cols-2 gap-x-4 gap-y-5 sm:grid-cols-3 lg:grid-cols-4">
-              <Stat label="N. America to date" {...pick(G.naCume)} accent="godz" sub="through Nov 15" />
+              <Stat label="N. America to date" {...pick(G.naCume)} accent="godz" sub={`through ${date(G.naCume?.period?.asOf, { day: "numeric", month: "short" })}`} />
               <Stat label="N. America opening" {...pick(G.naOpening)} sub={`${site.godzilla.theaters.toLocaleString()} theaters`} />
               <Stat label="N. America opening day" {...pick(G.naFriday)} sub="Fri Nov 6, incl. previews" />
               <Stat label="Avg per theater (opening)" value={usd(site.godzilla.avgPerTheaterOpening)} sub="derived" />
@@ -51,7 +51,7 @@ export default function Godzilla() {
       </Section>
       <Section title="North America weekends">
         <div className="grid gap-4 lg:grid-cols-2">
-          <Card title="Weekend gross" sub="USD · hatched style = projection">
+          <Card title="Weekend gross" sub={G.naSecondWeekend?.status === "projection" ? "USD · faded bar = projection" : "USD · Comscore actuals via The Numbers"}>
             <ResponsiveContainer width="100%" height={220}>
               <BarChart data={weekends} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
                 <CartesianGrid vertical={false} />
@@ -60,7 +60,7 @@ export default function Godzilla() {
                 <Tooltip content={<RichTooltip fmt={(v) => usd(v) ?? ""} />} />
                 <Bar dataKey="v" name="Weekend gross" radius={[4, 4, 0, 0]} isAnimationActive={false}>
                   <Cell fill={C.godz} />
-                  <Cell fill={C.godz} fillOpacity={0.4} stroke={C.godz2} strokeDasharray="4 3" />
+                  {G.naSecondWeekend?.status === "projection" ? <Cell fill={C.godz} fillOpacity={0.4} stroke={C.godz2} strokeDasharray="4 3" /> : <Cell fill={C.godz} />}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
@@ -69,10 +69,10 @@ export default function Godzilla() {
             <div className="flex flex-col gap-3">
               <div className="flex items-baseline gap-3">
                 <span className="text-2xl"><Change v={drop} /></span>
-                <span className="text-xs text-mute">projection, not an actual</span>
+                <span className="text-xs text-mute">{G.naSecondWeekend?.status === "projection" ? "projection, not an actual" : "actual, second weekend Nov 13–15"}</span>
               </div>
               <p className="text-sm leading-relaxed text-mute">
-                If it holds, this is the steepest second-weekend fall for a first-run Godzilla film in the U.S. Godzilla Minus One fell only 24.8% after an $11.4M opening. Weekend 1 was boosted by a record IMAX share, and Johnny Depp's <i>Ebenezer</i> opened against it.
+                This is the steepest second-weekend fall for a first-run Godzilla film in the U.S. Godzilla Minus One fell only 24.8% after an $11.4M opening. Weekend 1 was boosted by a record IMAX share, and Johnny Depp's <i>Ebenezer</i> opened against it.
               </p>
               <Note>Daily North American actuals from Box Office Mojo and The Numbers are added by hand when they publish; both prohibit automated scraping.</Note>
             </div>

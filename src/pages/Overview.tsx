@@ -32,7 +32,7 @@ function HeroPanel({ side }: { side: "ram" | "godz" }) {
             <div className="grid grid-cols-2 gap-x-4 gap-y-4">
               <Stat label="India net" value={cr(h.totalNet)} accent="ram" big sub={`Day 1–${R.lastReportedDay}`} source="sacnilk" />
               <Stat label="Worldwide gross" value={cr(h.worldwide?.amount)} accent="ram" big sub={`Day ${h.worldwide?.day}`} status={h.worldwide?.status} source={h.worldwide?.source} url={h.worldwide?.url} />
-              <Stat label="India gross" value={cr(h.indiaGross?.amount)} status="derived" sub={`Day ${h.indiaGross?.day}`} />
+              <Stat label="India gross" value={cr(h.indiaGross?.amount)} status={h.indiaGross?.status} source={h.indiaGross?.source} url={h.indiaGross?.url} sub={`Day ${h.indiaGross?.day}`} />
               <Stat label="Overseas gross" value={cr(h.overseas?.amount)} sub={`Day ${h.overseas?.day}`} source={h.overseas?.source} url={h.overseas?.url} />
               <Stat label="Rank, Indian films worldwide" value={rank ? `#${rank}` : null} sub="Cross-ledger" />
               <div className="flex flex-col gap-1">
@@ -45,8 +45,8 @@ function HeroPanel({ side }: { side: "ram" | "godz" }) {
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-x-4 gap-y-4">
-              <Stat label="North America" value={usd(G.naCume?.amount)} accent="godz" big sub="through Nov 15" status={G.naCume?.status} source={G.naCume?.source} url={G.naCume?.url} />
-              <Stat label="Worldwide, opening frame" value={usd(G.wwOpening?.amount)} accent="godz" big sub="to Nov 8" status={G.wwOpening?.status} source={G.wwOpening?.source} url={G.wwOpening?.url} />
+              <Stat label="North America" value={usd(G.naCume?.amount)} accent="godz" big sub={`through ${date(G.naCume?.period?.asOf, { day: "numeric", month: "short" })}`} status={G.naCume?.status} source={G.naCume?.source} url={G.naCume?.url} />
+              <Stat label="Worldwide gross" value={usd(G.wwLatest?.amount)} accent="godz" big sub={`to ${date(G.wwLatest?.period?.asOf, { day: "numeric", month: "short" })}`} status={G.wwLatest?.status} source={G.wwLatest?.source} url={G.wwLatest?.url} />
               <Stat label="International" value={usd(G.intlOpening?.amount)} sub="to Nov 8, incl. Japan" source={G.intlOpening?.source} />
               <Stat label="Japan" value={jpy(G.japanJPY?.amount)} sub={`${usd(G.japanUSD?.amount)} · to Nov 8`} source={G.japanJPY?.source} />
               <Stat label="Global IMAX opening" value={usd(G.imaxWW?.amount)} sub="34% of worldwide" source="imax" />
@@ -60,7 +60,7 @@ function HeroPanel({ side }: { side: "ram" | "godz" }) {
             </div>
           )}
           <div className="mt-auto text-[11px] text-mute">
-            Last verified figure: {isRam ? `Day ${R.lastReportedDay}, ${date(R.rows[R.lastReportedDay - 1].date)}` : "Nov 15 weekend projection"} · Retrieved {dateTimeIST(site.observations.filter((o) => o.film === side.replace("godz", "godzilla").replace("ram", "ramayana")).map((o) => o.retrievedAt).sort().at(-1))}
+            Last verified figure: {isRam ? `Day ${R.lastReportedDay}, ${date(R.rows[R.lastReportedDay - 1].date)}` : `${G.naSecondWeekend?.status === "projection" ? "projected" : "actual"} N. America weekend to ${date(G.naCume?.period?.asOf)}`} · Retrieved {dateTimeIST(site.observations.filter((o) => o.film === side.replace("godz", "godzilla").replace("ram", "ramayana")).map((o) => o.retrievedAt).sort().at(-1))}
           </div>
         </div>
       </div>
@@ -106,15 +106,18 @@ export default function Overview() {
               <Note tone="warn">The comparison figures come from a different ledger than Ramayana's running total, so treat gaps as indicative.</Note>
             </div>
           </Card>
-          <Card title="Global weekend, Nov 6–8" sub="Same Deadline report for both films">
+          <Card title="Global box office, head to head" sub="Each row: both films from the same report">
             <div className="flex flex-col gap-3">
-              {site.headToHead.slice(0, 1).map((h: any) => (
-                <div key={h.metric} className="grid grid-cols-2 gap-3">
-                  <Stat label="Godzilla −0.0" value={usd(h.godzilla?.amount)} accent="godz" />
-                  <Stat label="Ramayana" value={usd(h.ramayana?.amount)} accent="ram" />
+              {site.headToHead.filter((h: any) => h.metric.startsWith("Worldwide") && h.comparable).map((h: any) => (
+                <div key={h.window} className="flex flex-col gap-1.5 border-b border-line/60 pb-3 last:border-0">
+                  <div className="text-[11px] text-mute">{h.window}</div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <Stat label="Ramayana" value={usd(h.ramayana?.amount)} accent={h.leader === "ramayana" ? "ram" : undefined} />
+                    <Stat label="Godzilla −0.0" value={usd(h.godzilla?.amount)} accent={h.leader === "godzilla" ? "godz" : undefined} />
+                  </div>
                 </div>
               ))}
-              <p className="text-xs leading-relaxed text-mute">Godzilla's total includes Japan from its Tuesday Nov 3 opening. Ramayana's includes India from Thursday Nov 5.</p>
+              <p className="text-xs leading-relaxed text-mute">Godzilla opened in Japan on Tue Nov 3, Ramayana in India on Thu Nov 5. Leader in colour.</p>
               <a href="#compare" className="inline-flex items-center gap-1 text-xs font-semibold text-godz-2 hover:underline">
                 Full head to head <ArrowRight size={13} aria-hidden />
               </a>

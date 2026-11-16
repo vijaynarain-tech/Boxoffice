@@ -1856,5 +1856,238 @@
     "source": "boxofficeindia24",
     "url": "https://www.boxofficeindia24.com/news/ramayana-day-7-box-office-20261111-live",
     "note": "Single-day gross for Day 7 (Wed Nov 11)."
+  },
+  {
+    "id": "ramayana-105",
+    "film": "ramayana",
+    "territory": "IN",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "net",
+    "period": {
+      "type": "day",
+      "date": "2026-11-15",
+      "day": 11
+    },
+    "amount": 75,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/quicknews/ramayana_part_1_2026_Box_Office_Collection_Day_11",
+    "note": "Second Sunday; biggest second Sunday for a Hindi film (ahead of Dhurandhar 2's ₹68 Cr). Early Sacnilk estimate reported by Free Press Journal and ETV Bharat."
+  },
+  {
+    "id": "ramayana-106",
+    "film": "ramayana",
+    "territory": "IN",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 909,
+    "unit": "INR_CR",
+    "source": "indiacom",
+    "url": "https://www.india.com/entertainment/bollywood/ramayana-box-office-collection-day-11-ranbir-kapoor-film-witnesses-33-6-percent-jump-on-second-sunday-beats-its-first-sunday-earnings-8545204/",
+    "note": "Cites Sacnilk."
+  },
+  {
+    "id": "ramayana-107",
+    "film": "ramayana",
+    "territory": "WW",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 1384.5,
+    "unit": "INR_CR",
+    "source": "indiacom",
+    "url": "https://www.india.com/entertainment/bollywood/ramayana-box-office-collection-day-11-ranbir-kapoor-film-witnesses-33-6-percent-jump-on-second-sunday-beats-its-first-sunday-earnings-8545204/",
+    "note": "Cites Sacnilk. India gross ₹909 Cr + overseas ₹475.50 Cr."
+  },
+  {
+    "id": "ramayana-108",
+    "film": "ramayana",
+    "territory": "OS",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 475.5,
+    "unit": "INR_CR",
+    "source": "dnaindia",
+    "url": "https://www.dnaindia.com/bollywood/report-ramayana-box-office-collection-day-11-ranbir-kapoor-film-mints-rs-1380-crore-beats-dhurandhar-lifetime-haul-3224113",
+    "note": "Cites Sacnilk."
+  },
+  {
+    "id": "ramayana-109",
+    "film": "ramayana",
+    "territory": "WW",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 1379.05,
+    "unit": "INR_CR",
+    "source": "wikipedia",
+    "url": "https://en.wikipedia.org/wiki/1000_Crore_Club",
+    "note": "1000 Crore Club page; may predate the latest update."
+  },
+  {
+    "id": "ramayana-110",
+    "film": "ramayana",
+    "territory": "IN",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "live",
+    "metric": "net",
+    "period": {
+      "type": "day",
+      "date": "2026-11-16",
+      "day": 12
+    },
+    "amount": 18.53,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/big-release/ramayana_part_1_2026",
+    "note": "Monday evening live estimate. Final figure arrives the next morning."
+  },
+  {
+    "id": "ramayana-111",
+    "film": "ramayana",
+    "territory": "IN",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "live",
+    "metric": "gross",
+    "period": {
+      "type": "day",
+      "date": "2026-11-16",
+      "day": 12
+    },
+    "amount": 21.87,
+    "unit": "INR_CR",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/big-release/ramayana_part_1_2026"
+  },
+  {
+    "id": "ramayana-112",
+    "film": "ramayana",
+    "territory": "IN",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "live",
+    "metric": "occupancy",
+    "period": {
+      "type": "day",
+      "date": "2026-11-16",
+      "day": 12
+    },
+    "amount": 22,
+    "unit": "PCT",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/big-release/ramayana_part_1_2026",
+    "note": "Overall occupancy, all languages."
+  },
+  {
+    "id": "ramayana-113",
+    "film": "ramayana",
+    "territory": "IN",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "live",
+    "metric": "shows",
+    "period": {
+      "type": "day",
+      "date": "2026-11-16",
+      "day": 12
+    },
+    "amount": 16024,
+    "unit": "COUNT",
+    "source": "sacnilk",
+    "url": "https://www.sacnilk.com/big-release/ramayana_part_1_2026"
+  },
+  {
+    "id": "ramayana-114",
+    "film": "ramayana",
+    "territory": "IN",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "live",
+    "metric": "net",
+    "period": {
+      "type": "day",
+      "date": "2026-11-16",
+      "day": 12
+    },
+    "amount": 12.63,
+    "unit": "INR_CR",
+    "source": "zeebiz",
+    "url": "https://www.zeebiz.com/trending/entertainment/news-ramayana-part-1-box-office-collection-day-12-ranbir-kapoor-s-epic-grosses-over-rs-1384-crore-worldwide-405615",
+    "note": "Earlier in the day than Sacnilk's evening figure."
+  },
+  {
+    "id": "ramayana-115",
+    "film": "ramayana",
+    "territory": "WW",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "period": {
+      "type": "weekend",
+      "start": "2026-11-13",
+      "end": "2026-11-15",
+      "label": "Global weekend Nov 13–15"
+    },
+    "amount": 38100000,
+    "unit": "USD",
+    "source": "patrickfrater",
+    "url": "https://patrickfrater.substack.com/p/ramayana-second-worldwide-box-office-godzilla",
+    "note": "Comscore (Rentrak) Friday–Sunday estimate. #2 worldwide behind Ebenezer."
+  },
+  {
+    "id": "ramayana-116",
+    "film": "ramayana",
+    "territory": "WW",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 147500000,
+    "unit": "USD",
+    "source": "businesstodaymy",
+    "url": "https://www.businesstoday.com.my/2026/11/16/ramayana-leads-global-box-office-race-as-godzilla-minus-zero-hits-us104-8-million/",
+    "note": "Deadline figure after 11 days."
+  },
+  {
+    "id": "ramayana-117",
+    "film": "ramayana",
+    "territory": "WW",
+    "retrievedAt": "2026-11-16T15:50:00Z",
+    "status": "estimated",
+    "metric": "gross",
+    "period": {
+      "type": "cume",
+      "asOf": "2026-11-15",
+      "throughDay": 11
+    },
+    "amount": 148000000,
+    "unit": "USD",
+    "source": "patrickfrater",
+    "url": "https://patrickfrater.substack.com/p/ramayana-second-worldwide-box-office-godzilla",
+    "note": "Distributor Prime Focus figure after 11 days."
   }
 ]

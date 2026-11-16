@@ -45,7 +45,7 @@ export default function Languages() {
                 <>
                   <Stat label="Opening day net" value={cr(allDay1)} source="sacnilk" status="final" />
                   <Stat label="Total India net" value={cr(R.headline.totalNet)} sub={`Day 1–${R.lastReportedDay}`} source="sacnilk" accent="ram" />
-                  <Stat label="Total India gross" value={cr(R.headline.indiaGross?.amount)} status="derived" />
+                  <Stat label="Total India gross" value={cr(R.headline.indiaGross?.amount)} status={R.headline.indiaGross?.status} source={R.headline.indiaGross?.source} />
                   <Stat label="Share of India net" value="100%" />
                 </>
               ) : (

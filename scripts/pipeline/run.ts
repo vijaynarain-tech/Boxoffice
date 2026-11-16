@@ -145,18 +145,27 @@ async function main() {
       const g = gzObs.filter(f);
       return g.length ? pickPrimary(g) : null;
     };
+    // Most recent cumulative figure: the highest throughDay wins, then source priority.
+    const latestCume = (f: (o: Observation) => boolean) => {
+      const g = gzObs.filter((o) => f(o) && o.period.type === "cume" && o.status !== "projection");
+      if (!g.length) return null;
+      const td = (o: Observation) => (o.period.type === "cume" ? o.period.throughDay ?? 0 : 0);
+      const max = Math.max(...g.map(td));
+      return pickPrimary(g.filter((o) => td(o) === max));
+    };
     const gz = {
       naFriday: one((o) => o.territory === "US-CA" && o.period.type === "day" && o.period.day === 1),
       naOpening: one((o) => o.territory === "US-CA" && !o.format && o.period.type === "weekend" && o.period.start === "2026-11-06"),
       naSecondWeekend: one((o) => o.territory === "US-CA" && o.period.type === "weekend" && o.period.start === "2026-11-13"),
-      naCume: one((o) => o.territory === "US-CA" && o.period.type === "cume"),
+      naCume: latestCume((o) => o.territory === "US-CA"),
       japanJPY: one((o) => o.territory === "JP" && o.unit === "JPY"),
       japanUSD: one((o) => o.territory === "JP" && o.unit === "USD" && o.period.type === "cume"),
       japanWeekend: one((o) => o.territory === "JP" && o.period.type === "weekend"),
       wwOpening: one((o) => o.territory === "WW" && !o.format && o.period.type === "weekend"),
-      wwLatest: one((o) => o.territory === "WW" && !o.format && o.period.type === "cume"),
+      wwLatest: latestCume((o) => o.territory === "WW" && !o.format),
+      wwWeekend2: one((o) => o.territory === "WW" && !o.format && o.period.type === "weekend" && o.period.start === "2026-11-13"),
       intlOpening: one((o) => o.territory === "INTL" && o.period.type === "weekend"),
-      intlLatest: one((o) => o.territory === "INTL" && o.period.type === "cume"),
+      intlLatest: latestCume((o) => o.territory === "INTL"),
       japanDay1: one((o) => o.territory === "JP" && o.metric === "gross" && o.period.type === "day"),
       japanAdmissionsDay1: one((o) => o.territory === "JP" && o.metric === "footfalls"),
       imaxWW: one((o) => o.territory === "WW" && o.format === "IMAX"),
@@ -195,6 +204,8 @@ async function main() {
     const deadlineWW = (film: Observation[]) => film.find((o) => o.territory === "WW" && !o.format && wk(o) && o.source === "deadline") ?? null;
     const headToHead = [
       cmp("Worldwide gross", "Global weekend Nov 6–8 (Deadline, same report)", deadlineWW(ramObs), deadlineWW(gzObs), true, "Both figures come from one Deadline global-weekend report. Godzilla's total includes Japan grosses from Nov 3; Ramayana's includes India from Nov 5."),
+      cmp("Worldwide gross", "Global weekend Nov 13–15 (Comscore via one report)", rw((o) => o.territory === "WW" && o.period.type === "weekend" && o.period.start === "2026-11-13" && o.source === "patrickfrater"), gzObs.find((o) => o.territory === "WW" && o.period.type === "weekend" && o.period.start === "2026-11-13" && o.source === "patrickfrater") ?? null, true, "Second global weekend for both films, from the same Comscore (Rentrak) estimate. Ramayana's second weekend held far better."),
+      cmp("Worldwide gross to date", "Running totals through Sun Nov 15 (Deadline)", rw((o) => o.territory === "WW" && o.unit === "USD" && o.period.type === "cume" && o.source === "businesstodaymy"), gzObs.find((o) => o.territory === "WW" && o.period.type === "cume" && o.source === "variety") ?? null, true, "Both totals through Nov 15. Godzilla has two more days in release (Japan opened Nov 3; Ramayana Nov 5)."),
       cmp("North America", "Opening weekend Nov 6–8", rw((o) => o.territory === "US" && wk(o)), gz.naOpening, false, "Ramayana's figure is U.S. only as reported; Godzilla's is U.S. + Canada. Shown side by side, no leader declared."),
       cmp("Global IMAX", "Global weekend Nov 6–8", ramImaxTotal ? { amount: ramImaxTotal, source: "deadline", note: "Sum of India, North America and 32 other territories in one Deadline report." } : null, gz.imaxWW, true, "Global IMAX opening vs global IMAX opening."),
       cmp("North America IMAX", "Opening weekend Nov 6–8", rw((o) => o.territory === "US-CA" && o.format === "IMAX"), gz.imaxNA, true, "Both U.S. + Canada IMAX for the same weekend. Ramayana played 53 IMAX screens."),

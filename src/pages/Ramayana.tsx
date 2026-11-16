@@ -13,11 +13,13 @@ const fmtCr = (v: number) => cr(v) ?? "";
 
 function MetricGrid() {
   const m: [string, string | null, string?, string?, string?][] = [
-    ["Today (Day " + R.todayDay + ")", null, "Live figure not reported yet"],
+    h.today
+      ? [`Today, live (Day ${h.today.day})`, cr(h.today.net), `${date(h.today.date, { weekday: "short", day: "numeric", month: "short" })}${h.today.gross ? ` · gross ${cr(h.today.gross)}` : ""}`, "live", h.today.source]
+      : [`Today (Day ${R.todayDay})`, null, "Live figure not reported yet"],
     ["Latest completed day", cr(h.latestDay.net), `Day ${h.latestDay.day} · ${date(h.latestDay.date, { day: "numeric", month: "short" })}`, h.latestDay.status ?? undefined, h.latestDay.source ?? undefined],
     ["Previous day", cr(h.previousDay.net), `Day ${h.previousDay.day}`, h.previousDay.status ?? undefined, h.previousDay.source ?? undefined],
-    ["Total India net", cr(h.totalNet), `Day 1–${R.lastReportedDay}`, "final", "sacnilk"],
-    ["Total India gross", cr(h.indiaGross?.amount), `Day ${h.indiaGross?.day}`, "derived"],
+    ["Total India net", cr(h.totalNet), `Day 1–${R.lastReportedDay}`, R.rows.some((r) => r.netStatus && r.netStatus !== "final") ? "estimated" : "final", "sacnilk"],
+    ["Total India gross", cr(h.indiaGross?.amount), `Day ${h.indiaGross?.day}`, h.indiaGross?.status ?? undefined, h.indiaGross?.source ?? undefined],
     ["Overseas gross", cr(h.overseas?.amount), `Day ${h.overseas?.day}`, h.overseas?.status, h.overseas?.source],
     ["Worldwide gross", cr(h.worldwide?.amount), `Day ${h.worldwide?.day}`, h.worldwide?.status, h.worldwide?.source],
     ["Opening day net", cr(h.openingDay), `Gross ${cr(h.openingDayGross)}`, "final", "sacnilk"],
@@ -30,8 +32,8 @@ function MetricGrid() {
     ["Biggest day-on-day fall", pct(h.biggestDecline.pct), `Day ${h.biggestDecline.day}`],
     ["Running daily average", cr(h.runningAverage), `Across ${R.lastReportedDay} days`],
     ["Tickets sold / footfalls", null],
-    ["Total shows", null],
-    ["Average occupancy", null],
+    ["Shows today", h.today?.shows ? h.today.shows.toLocaleString("en-IN") : null, h.today?.shows ? `Day ${h.today.day}, live` : undefined],
+    ["Occupancy today", h.today?.occupancy ? `${h.today.occupancy}%` : null, h.today?.occupancy ? `Day ${h.today.day}, all languages, live` : undefined],
     ["Producer share", null, "Distributor share is not published"],
   ];
   return (

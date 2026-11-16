@@ -75,6 +75,7 @@ export interface Conflict {
 export function findConflicts(all: Observation[], describe: (o: Observation) => string): Conflict[] {
   const groups = new Map<string, Observation[]>();
   for (const o of all) {
+    if (o.status === "projection" || o.status === "live") continue; // forecasts and intraday estimates are not competing reports
     const k = figureKey(o);
     groups.set(k, [...(groups.get(k) ?? []), o]);
   }
@@ -169,8 +170,11 @@ function byThroughDay(obs: Observation[]) {
 }
 
 export function buildRamayana(obs: Observation[], releaseDate: string, today: string) {
-  const net = byDay(sel(obs, { metric: "net", territory: "IN" }, "day"));
-  const gross = byDay(sel(obs, { metric: "gross", territory: "IN" }, "day"));
+  // Live intraday figures are shown as "today" but never counted as a completed day.
+  const allNet = sel(obs, { metric: "net", territory: "IN" }, "day");
+  const liveNet = allNet.filter((o) => o.status === "live");
+  const net = byDay(allNet.filter((o) => o.status !== "live"));
+  const gross = byDay(sel(obs, { metric: "gross", territory: "IN" }, "day").filter((o) => o.status !== "live"));
   const hindi = byDay(sel(obs, { metric: "net", territory: "IN", language: "Hindi" }, "day"));
   const osDay = byDay(sel(obs, { metric: "gross", territory: "OS" }, "day"));
   const wwCume = byThroughDay(sel(obs, { metric: "gross", territory: "WW" }, "cume"));
@@ -287,7 +291,16 @@ export function buildRamayana(obs: Observation[], releaseDate: string, today: st
       totalNetSource: "sacnilk",
       worldwide: wwP ? { amount: wwP.amount, day: latestWW[0], source: wwP.source, status: wwP.status, url: wwP.url } : null,
       overseas: osP ? { amount: osP.amount, day: latestOS[0], source: osP.source, status: osP.status, url: osP.url } : null,
-      indiaGross: sameDay && wwP && osP ? { amount: round(wwP.amount - osP.amount), day: latestWW[0], derived: true, note: `Worldwide (${wwP.source}) minus overseas (${osP.source}) for Day ${latestWW[0]}.` } : null,
+      indiaGross: (() => {
+        if (!(sameDay && wwP && osP)) return null;
+        const d = latestWW[0];
+        const pub = sel(obs, { metric: "gross", territory: "IN" }, "cume").filter((o) => o.period.type === "cume" && o.period.throughDay === d);
+        if (pub.length) {
+          const p = pickPrimary(pub);
+          return { amount: p.amount, day: d, derived: false, source: p.source, status: p.status, url: p.url, note: p.note ?? null };
+        }
+        return { amount: round(wwP.amount - osP.amount), day: d, derived: true, source: null, status: "derived", url: null, note: `Worldwide (${wwP.source}) minus overseas (${osP.source}) for Day ${d}.` };
+      })(),
       openingDay: withNet[0].net,
       openingDayGross: rows[0].gross,
       openingWeekend: { net: sumDays(1, 4), label: "Extended opening weekend, Thu–Sun (Day 1–4)" },
@@ -298,6 +311,26 @@ export function buildRamayana(obs: Observation[], releaseDate: string, today: st
       biggestIncrease: { day: biggestUp.day, date: biggestUp.date, pct: biggestUp.changePct },
       biggestDecline: { day: biggestDown.day, date: biggestDown.date, pct: biggestDown.changePct },
       runningAverage: round(latest.cumNet! / latest.day),
+      today: (() => {
+        const day = Math.max(0, ...liveNet.map((o) => (o.period as { day: number }).day));
+        const at = (o: Observation) => o.period.type === "day" && o.period.day === day && o.status === "live" && !o.region && !o.language;
+        const n = liveNet.filter((o) => (o.period as { day: number }).day === day);
+        if (!n.length || day <= lastDay) return null;
+        const p = pickPrimary(n);
+        const find = (metric: string) => obs.find((o) => at(o) && o.metric === metric && o.source === p.source);
+        return {
+          day,
+          date: addDays(releaseDate, day - 1),
+          net: p.amount,
+          gross: find("gross")?.amount ?? null,
+          shows: find("shows")?.amount ?? null,
+          occupancy: find("occupancy")?.amount ?? null,
+          source: p.source,
+          url: p.url,
+          note: p.note ?? null,
+          others: n.filter((o) => o !== p).map((o) => ({ source: o.source, amount: o.amount })),
+        };
+      })(),
       tickets: null,
       shows: null,
       occupancy: null,
