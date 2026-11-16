@@ -17,6 +17,11 @@ on:
     - cron: '30 16 * * *'  # 22:00 IST
     - cron: '47 16 * * *'  # 22:17 IST backup
     - cron: '23 17 * * *'  # 22:53 IST backup
+  # Run straight away when someone (or an assistant) adds figures.
+  push:
+    paths:
+      - 'data/inbox/**'
+      - 'data/ledger/**'
   workflow_dispatch:
 
 permissions:

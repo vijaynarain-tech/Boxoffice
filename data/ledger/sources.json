@@ -320,5 +320,14 @@
     "region": "India",
     "reliability": "Secondary report citing Sacnilk.",
     "cites": "sacnilk"
+  },
+  {
+    "id": "newsreport",
+    "name": "Other news report",
+    "url": "https://news.google.com/",
+    "region": "Global",
+    "access": "manual",
+    "accessNote": "Any published news article not in this list. The observation url must point to the article.",
+    "reliability": "Secondary report; check the url for the outlet and what it cites."
   }
 ]
