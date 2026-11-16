@@ -42,7 +42,7 @@ jobs:
         id: slot
         run: node scripts/pipeline/slot-check.mjs
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         if: steps.slot.outputs.skip != 'true'
         with:
           node-version: 22
