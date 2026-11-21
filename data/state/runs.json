@@ -1,5 +1,34 @@
 [
   {
+    "startedAt": "2026-11-21T16:55:23.146Z",
+    "finishedAt": "2026-11-21T16:55:23.749Z",
+    "trigger": "github:schedule",
+    "status": "success",
+    "summary": "518 observations · 43 conflicts · 0 revisions · Ramayana Day 12 · FX ok",
+    "steps": [
+      {
+        "name": "validate",
+        "ok": true,
+        "detail": "518 observations valid (1 inbox file(s))"
+      },
+      {
+        "name": "cross-check",
+        "ok": true,
+        "detail": "Dates, sources and cumulative series consistent"
+      },
+      {
+        "name": "fx",
+        "ok": true,
+        "detail": "USD→INR 92.68, USD→JPY 158.64 (ECB 2026-11-20)"
+      },
+      {
+        "name": "reconcile",
+        "ok": true,
+        "detail": "43 source conflict(s), 0 new revision(s)"
+      }
+    ]
+  },
+  {
     "startedAt": "2026-11-21T10:00:02.797Z",
     "finishedAt": "2026-11-21T10:00:03.781Z",
     "trigger": "github:schedule",
